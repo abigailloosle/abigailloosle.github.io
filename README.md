@@ -1,2 +1,2 @@
 # abigailloosle.github.io
-for school projects
+# for school projects
