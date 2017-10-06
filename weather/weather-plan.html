@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en-us">
     <head>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
         <title>Franklin, ID | Weather Info</title>
         <meta name="Weather forecast for local areas" content="Interactive and accurate weather landing page for various locations.">
         <!-- <meta author="Abigail Loosle"> -->
@@ -11,7 +11,10 @@
             @import url('https://fonts.googleapis.com/css?family=Sansita');
             h1 {color: rgb(59,90,134);
                 font-family: 'Sansita', sans-serif;}
-            h2 {color: rgb(89,129,184)}
+            h2,h3,h4,h5,h6 {color: rgb(89,129,184);
+                font-family: 'Sansita', sans-serif;}
+            body {font-family: 'Helvetica', sans-serif;}
+            pre {font-family: 'Helvetica', sans-serif;}
         </style>
     </head>
 
@@ -23,19 +26,20 @@
             <a href="http://abigailloosle.github.io/index.html">Home</a>
             <a href="http://abigailloosle.github.io/projects.html">Projects</a>
         </nav>
+
         <main>
             <h2>Purpose</h2>
-                <p>The purpose of the <i>Weather Site</i> is to give current weather conditions in 3 different ways.  The initial page will give the weather for the current location based on the Geocoding location information from the device.  The second is weather for 3 specific locations accessible through a dedicated link, and the third is weather for any location determined by a search string.
+            <p>The purpose of the <strong><em>Weather Site</em></strong> is to give current weather conditions in 3 different ways.  The initial page will give the weather for the current location based on the Geocoding location information from the device.  The second is weather for 3 specific locations accessible through a dedicated link, and the third is weather for any location determined by a search string.
             </p>
 
             <h2>Audience</h2>
                 <p>Primary audience is adults ages 18-30.  Most will be students.  Access to the site will be split between mobile devices and laptops. A secondary audience will be anyone interested in weather.</p>
 
-            <h2>Audience Goals:</h2>
+            <h3>Audience Goals:</h3>
                 <p>College students move around quite a bit so one goal would be to quickly get the weather conditions for their current location as they head off to class or study. They are also often far from their homes so the ability to quickly get the conditions for a specific location is important as well.  The third goal deals with planning for travels...the ability to get weather conditions for any location will help with last minute packing for road trips.
             </p>
 
-            <h2>Persona</h2>
+            <h3>Persona</h3>
                 <img src="weather-img/cool-joe.jpg">
                 <ul>
                     <li><b>Name:</b> Joe Cool</li>
@@ -48,10 +52,10 @@
                 </ul>
 
             <h2>Content</h2>
-                <p>All weather pages should include location name, current temperature, forecast high, forecast low, current weather descriptor, forecast percentage of precipitation, and current wind speed and direction on small devices and hourly temps should be added on larger screens. The pages of the <b>Weather Site</b> will be built in the following order:
+                <p>All weather pages should include location name, current temperature, forecast high, forecast low, current weather descriptor, forecast percentage of precipitation, and current wind speed and direction on small devices and hourly temps should be added on larger screens. The pages of the <strong>Weather Site</strong> will be built in the following order:
                 </p>
 
-            <h2>Pages</h2>
+            <h3>Pages</h3>
                 <ol>
                     <li><b>Franklin, Greenville, Springfield</b>: weather for each specific location. The weather for these pages should be pulled from the weather.JSON file that will be provided.</li>
                     <li><b>Home</b>: weather for the current location. Current location should be determined by using the Geolocation API of the browser.  This information should be passed to the WeatherUnderground API  (<a href="https://www.wunderground.com/weather/api/">https://www.wunderground.com/weather/api/</a>) to retrieve the current conditions.</li>
@@ -60,44 +64,45 @@
 
             <h2>Styles</h2>
 
-            <h2>Branding</h2>
-                <p>The client provided the following initial concept for a name and logo:<big><b><i>Weather Site</i></b></big> The name should be bold &amp; italic</p>
+            <h3>Branding</h3>
+                <pre>The client provided the following initial concept for a name and logo:
+<big><b><i>Weather Site</i></b></big> The name should be bold &amp; italic</pre>
                 <p><img src="weather-img/logo.jpeg">This logo can also be rendered using a HTML entity - &amp;#9748;</p>
 
-            <h2>Typography</h2>
+            <h3>Typography</h3>
                 <p><b>Heading Font</b>: Sansita <!-- https://fonts.google.com/specimen/Sansita --> From Google Fonts</p>
                 <img src="weather-img/sanita-alphabet.jpg">
 
                 <p><b>Body Copy Font</b>: Helvetica</p>
                 <img src="weather-img/helvetica-alphabet.png">
 
-            <h2>Colors</h2>
+            <h3>Colors</h3>
                 <img src="weather-img/color-swatches.jpeg">
 
-            <h2>Elements</h2>
+            <h3>Elements</h3>
                 <p>(add title attribute to each anchor)</p>
 
-            <h2>Navigation:</h2>
+            <h3>Navigation:</h3>
                 <img src="weather-img/template-nav.jpeg">
                 <!-- how to underline below -->
-                <p>Link:normal : #FFF</p>
-                <p>Link:visited : #D8F</p>
-                <p>Link:hover, Link:focus :  #0E89D5</p>
-                <p>Link:active :  default (omit from styles)</p>
+                <u><pre>Link:normal : #FFF
+Link:visited : #D8F
+Link:hover, Link:focus :  #0E89D5
+Link:active :  default (omit from styles)</pre></u>
 
-            <h2>Opaque rounded content box:</h2>
+            <h3>Opaque rounded content box:</h3>
                 <img src="weather-img/content-box.jpeg">
-                <p>background-color: rgba(200,200,200,.6);</p>
-                <p>margin: .2em auto;</p>
-                <p>border: 1px solid;</p>
-                <p>border-radius: 5px;</p>
+                <pre>background-color: rgba(200,200,200,.6);
+margin: .2em auto;
+border: 1px solid;
+border-radius: 5px;</pre>
 
             <h2>Wireframes</h2>
 
-            <h2>Small screen</h2>
+            <h3>Small screen</h3>
                 <img src="weather-img/small-wireframe.jpeg">
 
-            <h2>Large Screen</h2>
+            <h3>Large Screen</h3>
                 <img src="weather-img/large-wireframe.jpeg">
         </main>
         <footer>
