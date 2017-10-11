@@ -7,6 +7,8 @@
         <!-- <meta author="Abigail Loosle"> -->
         <meta name="viewport" content="width=device-width">
 
+        <link rel="stylesheet" type="text/css" href="weather/screen.css" media="screen">
+
         <style>
             @import url('https://fonts.googleapis.com/css?family=Sansita');
             h1,h2,h3,h4,h5,h6 {color: rgb(89,129,184);
@@ -19,50 +21,52 @@
     </head>
 
     <body>
-        <header>
-            <img src="weather/weather-img/logo.jpeg" alt="Weather Site Logo">
-            <h1>Weather Site</h1>
+        <header id="page-header">
+            <img src="weather/weather-img/logo.jpeg" alt="Weather Site Logo" id="head-logo">
+            <h1 class="site-name">Weather Site</h1>
         </header>
         <nav>
-            <a href="http://abigailloosle.github.io/index.html" title="Go to home page">Home</a>
-            <a href="#" title="Visit Franklin weather">Franklin</a>
-            <a href="#" title="Visit Greenville weather">Greenville</a>
-            <a href="#" title="Visit Springfield weather">Springfield</a>
-            <a href="#" title="Search the site">Search</a>
+            <ul>
+                <li><a href="http://abigailloosle.github.io/index.html" title="Go to home page">Home</a></li>
+                <li><a href="#" title="Visit Franklin weather">Franklin</a></li>
+                <li><a href="#" title="Visit Greenville weather">Greenville</a></li>
+                <li><a href="#" title="Visit Springfield weather">Springfield</a></li>
+                <li><a href="#" title="Search the site">Search</a></li>
+            </ul>
         </nav>
         <main>
             <article>
                 <h1>Franklin<!-- java -->, ID<!-- java --></h1>
                 <img src="#" alt="background image">
-                <section>
+                <section class="overview">
                     <h3>Current Conditions</h3>
-                    <ul style="list-style-type: none">
+                    <ul>
                         <li><b>Wind:</b> Southwest <!-- java --> @ 1-5<!-- java --> MPH </li>
                         <li><b>Precipitation:</b> 0<!-- java -->%</li>
                     </ul>
                     <img src="#" alt="image representing weather conditions">  <b>Sunny<!-- java --></b>
                 </section>
 
-                <section>
+                <section class="cur-conditions">
                     <h3><b>Current Temp</b></h3>
                     <b>16 F</b><!-- java -->
                     <p>Today's High and Low</p>
                     <p><b>90<!-- java --> F / 66<!-- java --> F</b></p>
                 </section>
 
-                <section>
+                <!-- <section class="hourly">
                     <h3><b>Hourly Forecast</b></h3>
                     <ul>
-                        <li>7am   72<!-- java -->F</li>
-                        <li>8am   74<!-- java -->F</li>
-                        <li>9am   77<!-- java -->F</li>
+                        <li>7am   72F</li>
+                        <li>8am   74F</li>
+                        <li>9am   77F</li>
                         <li>...</li>
                     </ul>
-                </section>
+                </section> -->
             </article>
         </main>
         <footer>
-            &copy;2017 Weathher Site | Abigail Loosle
+            &copy;2017 Weather Site | Abigail Loosle
         </footer>
     </body>
 </html>
