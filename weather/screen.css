@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css?family=Sansita');
+
+/* @media screen and (max-width:300px){
+    #parent{
+        display:flex;
+        flex-flow: column;
+    }
+    .overview {order:1;}
+    .cur-conditions {order:2;}
+    .hourly {display: none;}
+} */
+
+* {box-sizing: border-box; /* changes width property
+    to total width instead of content width */}
+
+*:before, *:after{box-sizing: border-box;}
+
+article,
+aside,
+footer,
+header,
+nav,
+section,
+main,
+figcaption,
+figure {display: block; /* just in case we have
+    any older browsers that don't recognize
+    the HTML5 semantic elements */}
+
+body {margin: 0; /* remove any margin from body */
+    padding: 0; /* ditto for padding */
+    font-family: 'Helvetica', sans-serif;
+    font-size: 20px;}
+
+main {display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    background-color: #FFF;
+    background-image: url("/weather/weather-img/background-phone.jpg");
+    background-size: cover;
+    text-align: center;}
+
+h1,h2,h3,h4,h5,h6 {color: #0e89d5;
+    font-family: 'Sansita', "second choice", sans-serif;}
+
+nav ul {display: flex;
+    list-style: none;
+    line-height: 2.5em;
+    justify-content: space-between;
+    font-size: .85em;}
+
+nav {position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0e89d5;
+    padding: .4em;}
+
+/* nav interaction */
+nav a:link {text-decoration: none;
+    color: #FFF;}
+
+nav a:visited {color: #D8F;}
+
+nav a:hover,nav a:focus {color: #6c4ddb;}
+
+#page-header{display: flex;
+    align-items: center;
+    background-color: #0e89d5;}
+
+.site-name {font-size: 2.5em;
+    font-weight: 600;
+    vertical-align: bottom;
+    padding-left: .3em;
+    color: #FFF;}
+
+/* If using an image for logo #head-logo {height: 20px;} */
+
+/* logo using HTML entity */
+#logo {font-size: 3em;
+    margin: 0;
+    padding-left: .15em;}
+
+#city-name {order: 0;
+    font-size: 2em;}
+
+article {display:flex;
+    flex-direction: column;}
+
+footer {margin-bottom: 3em;
+    background-color: #0e89d5;
+    padding: .4em;
+    font-size: .85em;}
+
+ul {list-style-type: none;
+    padding: 0;}
+
+pre {font-family: 'Helvetica', sans-serif;}
+
+.cur-conditions {background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 10px;
+    order: 2;
+    padding: 1em;}
+
+/* change heading color for better clarity */
+#current-cond {color: #FFF;
+    margin-top: 0;}
+
+/* correct alignment and spacing */
+.info {text-align: left;
+    margin-bottom: 0;}
+
+.overview {background-color: rgba(200,200,200,.6);
+    margin: .2em auto;
+    border: 1px solid;
+    border-radius: 10px;
+    order: 1;
+    padding: 1em;
+    padding-bottom: 0;}
+
+/* make curent temperature large */
+#cur-temp {font-size: 2em;}
+
+#high-low {margin-bottom: .4em auto;}
+
+/* only for mobile */
+.mobile {display: none;}

@@ -7,23 +7,13 @@
         <!-- <meta author="Abigail Loosle"> -->
         <meta name="viewport" content="width=device-width">
 
-        <link rel="stylesheet" type="text/css" href="weather/screen.css" media="screen">
-
-        <style>
-            @import url('https://fonts.googleapis.com/css?family=Sansita');
-            h1,h2,h3,h4,h5,h6 {color: rgb(89,129,184);
-                font-family: 'Sansita', sans-serif;}
-            body {font-family: 'Helvetica', sans-serif;}
-            pre {font-family: 'Helvetica', sans-serif;}
-            ul {list-style-type: none;
-                padding-left: 0;}
-        </style>
+        <link rel="stylesheet" type="text/css" href="screen.css" media="screen">
     </head>
 
     <body>
         <header id="page-header">
-            <img src="weather/weather-img/logo.jpeg" alt="Weather Site Logo" id="head-logo">
-            <h1 class="site-name">Weather Site</h1>
+            <p id="logo"> &#9748; </p><!-- <img src="weather-img/logo.jpeg" alt="Weather Site Logo" id="head-logo"> -->
+            <h1 class="site-name"><i>Weather Site</i></h1>
         </header>
         <nav>
             <ul>
@@ -36,25 +26,27 @@
         </nav>
         <main>
             <article>
-                <h1>Franklin<!-- java -->, ID<!-- java --></h1>
-                <img src="#" alt="background image">
-                <section class="overview">
-                    <h3>Current Conditions</h3>
-                    <ul>
+                <h1 id="city-name">Franklin<!-- java -->, ID<!-- java --></h1>
+                <!-- <img src="weather-img/background-phone.jpg" alt="background image"> -->
+                <section class="cur-conditions">
+                    <h3 id="current-cond">Current Conditions</h3>
+                    <ul class="info">
                         <li><b>Wind:</b> Southwest <!-- java --> @ 1-5<!-- java --> MPH </li>
                         <li><b>Precipitation:</b> 0<!-- java -->%</li>
                     </ul>
-                    <img src="#" alt="image representing weather conditions">  <b>Sunny<!-- java --></b>
+                    <div class="mobile">
+                        <img src="#" alt="image representing weather conditions">  <b>Sunny<!-- java --></b>
+                    </div>
                 </section>
 
-                <section class="cur-conditions">
-                    <h3><b>Current Temp</b></h3>
-                    <b>16 F</b><!-- java -->
-                    <p>Today's High and Low</p>
-                    <p><b>90<!-- java --> F / 66<!-- java --> F</b></p>
+                <section class="overview">
+                    <h3 class="mobile"><b>Current Temp</b></h3>
+                    <b id="cur-temp">16 F</b><!-- java -->
+                    <p class="mobile">Today's High and Low</p>
+                    <p id="high-low">&#9728; <b>90<!-- java --> F / 66<!-- java --> F</b></p>
                 </section>
 
-                <!-- <section class="hourly">
+                <section class="mobile">
                     <h3><b>Hourly Forecast</b></h3>
                     <ul>
                         <li>7am   72F</li>
@@ -62,11 +54,11 @@
                         <li>9am   77F</li>
                         <li>...</li>
                     </ul>
-                </section> -->
+                </section>
             </article>
         </main>
         <footer>
-            &copy;2017 Weather Site | Abigail Loosle
+            &copy; 2017 Weather Site | Abigail Loosle
         </footer>
     </body>
 </html>
