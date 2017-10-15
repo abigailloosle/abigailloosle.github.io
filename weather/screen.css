@@ -123,7 +123,7 @@ pre {font-family: 'Helvetica', sans-serif;}
 /* make curent temperature large */
 #cur-temp {font-size: 2em;}
 
-#high-low {margin-bottom: .4em auto;}
+#high-low {margin-bottom: .4em;}
 
 /* only for mobile */
 .mobile {display: none;}
