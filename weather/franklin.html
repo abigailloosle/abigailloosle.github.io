@@ -28,33 +28,55 @@
             <article>
                 <h1 id="city-name">Franklin<!-- java -->, ID<!-- java --></h1>
                 <!-- <img src="weather-img/background-phone.jpg" alt="background image"> -->
-                <section class="cur-conditions">
-                    <h3 id="current-cond">Current Conditions</h3>
+                <div>
+                <section id="cur-conditions">
+                    <h4 class="heading">Current Conditions</h4>
                     <ul class="info">
                         <li><b>Wind:</b> Southwest <!-- java --> @ 1-5<!-- java --> MPH </li>
                         <li><b>Precipitation:</b> 0<!-- java -->%</li>
                     </ul>
-                    <div class="mobile">
-                        <img src="#" alt="image representing weather conditions">  <b>Sunny<!-- java --></b>
+                    <div class="mobile" id="condition">
+                        <span id="sun">&#9728;</span> <b id="type">Sunny<!-- java --></b>
                     </div>
                 </section>
 
-                <section class="overview">
-                    <h3 class="mobile"><b>Current Temp</b></h3>
+                <section id="overview">
+                    <h4 class="mobile heading" id="temp"><b>Current Temp</b></h4>
                     <b id="cur-temp">16 F</b><!-- java -->
-                    <p class="mobile">Today's High and Low</p>
-                    <p id="high-low">&#9728; <b>90<!-- java --> F / 66<!-- java --> F</b></p>
+                    <p class="mobile" id="high-low">Today's High and Low</p>
+                    <p> <span class="screen">&#9728;</span> <b>90<!-- java --> F / 66<!-- java --> F</b></p>
                 </section>
 
-                <section class="mobile">
-                    <h3><b>Hourly Forecast</b></h3>
-                    <ul>
+                <section class="mobile" id="hourly">
+                    <h4 class="heading"><b>Hourly Forecast</b></h4>
+                    <ul id="times">
+                        <li>12am   67F</li>
+                        <li>1am   67F</li>
+                        <li>2am   69F</li>
+                        <li>3am   69F</li>
+                        <li>4am   69F</li>
+                        <li>5am   70F</li>
+                        <li>6am   69F</li>
                         <li>7am   72F</li>
                         <li>8am   74F</li>
                         <li>9am   77F</li>
-                        <li>...</li>
+                        <li>10am   79F</li>
+                        <li>11am   81F</li>
+                        <li>12pm   84F</li>
+                        <li>1pm   86F</li>
+                        <li>2pm   88F</li>
+                        <li>3pm   90F</li>
+                        <li>4pm   90F</li>
+                        <li>5pm   85F</li>
+                        <li>6pm   83F</li>
+                        <li>7pm   79F</li>
+                        <li>8pm   74F</li>
+                        <li>9pm   70F</li>
+                        <li>10pm   68F</li>
+                        <li>11pm   66F</li>
                     </ul>
                 </section>
+                </div>
             </article>
         </main>
         <footer>

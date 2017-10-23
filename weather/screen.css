@@ -1,15 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Sansita');
 
-/* @media screen and (max-width:300px){
-    #parent{
-        display:flex;
-        flex-flow: column;
-    }
-    .overview {order:1;}
-    .cur-conditions {order:2;}
-    .hourly {display: none;}
-} */
-
 * {box-sizing: border-box; /* changes width property
     to total width instead of content width */}
 
@@ -26,6 +16,8 @@ figcaption,
 figure {display: block; /* just in case we have
     any older browsers that don't recognize
     the HTML5 semantic elements */}
+
+header h1 {margin: .1em;}
 
 body {margin: 0; /* remove any margin from body */
     padding: 0; /* ditto for padding */
@@ -45,9 +37,11 @@ h1,h2,h3,h4,h5,h6 {color: #0e89d5;
 
 nav ul {display: flex;
     list-style: none;
-    line-height: 2.5em;
+    line-height: 1em;
     justify-content: space-between;
-    font-size: .85em;}
+    font-size: .85em;
+    padding-left: 2em;
+    padding-right: 2em;}
 
 nav {position: fixed;
     bottom: 0;
@@ -68,9 +62,9 @@ nav a:hover,nav a:focus {color: #6c4ddb;}
     align-items: center;
     background-color: #0e89d5;}
 
-.site-name {font-size: 2.5em;
+.site-name {font-size: 1.5em;
     font-weight: 600;
-    vertical-align: bottom;
+    vertical-align: center;
     padding-left: .3em;
     color: #FFF;}
 
@@ -90,7 +84,9 @@ article {display:flex;
     margin-top: 1em;
     margin-bottom: 1em;}
 
-footer {margin-bottom: 3em;
+article h1 {padding-left: 5%;}
+
+footer {margin-bottom: 2em;
     background-color: #0e89d5;
     padding: .4em;
     font-size: .85em;}
@@ -98,9 +94,7 @@ footer {margin-bottom: 3em;
 ul {list-style-type: none;
     padding: 0;}
 
-pre {font-family: 'Helvetica', sans-serif;}
-
-.cur-conditions {background-color: rgba(200,200,200,.6);
+#cur-conditions {background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 10px;
@@ -108,14 +102,16 @@ pre {font-family: 'Helvetica', sans-serif;}
     padding: 1em;}
 
 /* change heading color for better clarity */
-#current-cond {color: #FFF;
-    margin-top: 0;}
+.heading {color: #FFF;
+    margin-top: 0;
+    justify-content: center;}
 
 /* correct alignment and spacing */
-.info {text-align: left;
+.info {justify-content: center;
+    text-align: left;
     margin-bottom: 0;}
 
-.overview {background-color: rgba(200,200,200,.6);
+#overview {background-color: rgba(200,200,200,.6);
     margin: .2em auto;
     border: 1px solid;
     border-radius: 10px;
@@ -130,3 +126,72 @@ pre {font-family: 'Helvetica', sans-serif;}
 
 /* only for mobile */
 .mobile {display: none;}
+
+/* display for desktop */
+@media screen and (min-width: 414px) {
+    /* larger site name */
+    .site-name {font-size: 3em;
+        font-weight: 600;}
+
+    /* nav bar at top */
+    .nav {display: flex;}
+
+    /* align city-name to left */
+    article {width: 100%;
+        display: flex;
+        flex-flow: column;
+        align-items: flex-start;}
+
+    /* background img raindrop */
+    main {background-image: url("/weather/weather-img/raindrops.jpg");}
+
+    /* display section as row AND display hourly */
+    div {width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        display: flex;
+        flex-flow: row;
+        justify-content: space-around;}
+    #cur-conditions {width: 30%;
+        display: flex;
+        flex-flow: column;
+        order: 0;}
+    #condition {display: flex;
+        align-items: center;}
+    #sun {font-size: 3em;}
+    #overview {width: 24%;
+        display: flex;
+        flex-flow: column;
+        order: 1;
+        justify-content: center;
+        margin: .2em auto;}
+    #temp {display: flex;}
+    #high-low {display: flex;
+        justify-content: center;}
+    .screen {display: none;}
+    #hourly {width: 30%;
+        display: flex;
+        flex-flow: column;
+        order: 2;
+        background-color: rgba(200,200,200,.6);
+        margin: .2em auto;
+        border: 1px solid;
+        border-radius: 10px;
+        order: 2;
+        padding: 1em;}
+    #hourly ul {width: 95%;}
+
+    /* reorganize nav bar */
+    nav {position: initial;}
+
+    /* organize hourly times */
+    #times {overflow:auto;
+        height: 130px;}
+}
+    /* large img inside of cur-conditions */
+    /*#cur-conditions img {}
+
+    /* large img inside of cur-conditions */
+    /*#cur-conditions img {}
+
+    /* display current temp headings */
