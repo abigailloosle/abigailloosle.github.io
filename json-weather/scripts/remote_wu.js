@@ -33,7 +33,7 @@ $(function () {
             var blow = data['current_observation']['wind_mph'];
             var humid = data['current_observation']['relative_humidity'];
             var feel = data['current_observation']['feelslike_f'];
-//            var imgrep = data['current_observation']['icon_url'];
+            var imgrep = data['current_observation']['icon_url'];
 
             console.log(data);
 
@@ -42,7 +42,7 @@ $(function () {
             let round = Math.round(temp_f);
             $("#current-temp").html(round + '&deg;F');
 
-            $("#summary").html(overview);
+            $("#summary").html('<img src=' + imgrep + '>' + overview);
 
             $("#add1").html('Wind: ' + blow + 'mph');
 
