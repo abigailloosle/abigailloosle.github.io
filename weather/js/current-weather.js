@@ -31,7 +31,7 @@ $(function () {
             var temp_f = data['current_observation']['temp_f'];
             var overview = data['current_observation']['weather'];
             var blow = data['current_observation']['wind_mph'];
-            var imgrep = data['current-observation'][''];
+//            var imgrep = data['current-observation']['icon_url'];
 
             console.log("Current weather in "+location+" is "+temp_f);
 
@@ -40,7 +40,7 @@ $(function () {
             let round = Math.round(temp_f);
             $("#cur-temp").html(round + '&deg;F');
 
-            $("icon").html(imgrep);
+//            $("icon").html(imgrep);
 
             $("#outlook").html('<b>' + overview + '</b>');
 
