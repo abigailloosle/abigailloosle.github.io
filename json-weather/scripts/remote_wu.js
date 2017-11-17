@@ -33,9 +33,9 @@ $(function () {
             var blow = data['current_observation']['wind_mph'];
             var humid = data['current_observation']['relative_humidity'];
             var feel = data['current_observation']['feelslike_f'];
-            // rain, feels like
+//            var imgrep = data['current_observation']['icon_url'];
 
-            console.log("Current weather in "+location+" is "+temp_f);
+            console.log(data);
 
             $("#city-display").html( location_c + ', ' + location_s );
 
