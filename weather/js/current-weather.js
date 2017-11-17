@@ -23,28 +23,37 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
-        url : "http://api.wunderground.com/api/11c33fe5e1c8a83a/geolookup/conditions/q/" + lat + "," + long + ".json",
+        url : "http://api.wunderground.com/api/11c33fe5e1c8a83a/geolookup/conditions/forecast/q/" + lat + "," + long + ".json",
         dataType : "jsonp",
         success : function(data) {
             var location_c = data['location']['city'];
             var location_s = data['location']['state'];
             var temp_f = data['current_observation']['temp_f'];
             var overview = data['current_observation']['weather'];
+            var imgrep = data['current_observation']['icon_url'];
             var blow = data['current_observation']['wind_mph'];
-//            var imgrep = data['current-observation']['icon_url'];
+            var rain = data.forecast.simpleforecast.forecastday[1].pop;
+            var temp_high = data.forecast.simpleforecast.forecastday[0].high.fahrenheit;
+            var temp_low = data.forecast.simpleforecast.forecastday[0].low.fahrenheit;
 
-            console.log("Current weather in "+location+" is "+temp_f);
+//            console.log(data);
+//
+//            console.log(temp_high, temp_low);
 
-            $("#city-name").html( location_c + ', ' + location_s );
+            $("#city-name").html(location_c + ', ' + location_s);
 
             let round = Math.round(temp_f);
             $("#cur-temp").html(round + '&deg;F');
 
-//            $("icon").html(imgrep);
-
-            $("#outlook").html('<b>' + overview + '</b>');
+            $("#outlook").html('<span> <img src=' + imgrep + '><b>' + overview + '</b></span>');
 
             $("#w-info").html('<b>Wind: </b>' + blow + 'mph');
+
+            $("#rain-info").html('<b>Precipitation:</b>' + rain + '%');
+
+            $("#show-high-low").html('<b>' + temp_high + '&deg;F / ' + temp_low + '&deg;F</b>')
+
+            $("#icon").html('<img src='+ imgrep + '>')
 
             $("#cover").fadeOut(250);
         }

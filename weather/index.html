@@ -2,7 +2,7 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title>Franklin, ID | Weather Info</title>
+        <title id="city-name"></title>
         <meta name="Weather forecast for Franklin, Idaho" content="Interactive and accurate weather landing page for Franklin, Idaho.">
         <!-- <meta author="Abigail Loosle"> -->
         <meta name="viewport" content="width=device-width">
@@ -18,8 +18,8 @@
 * Who Did You Collaborate With On This Assessment?
 * 1. Abigail King
 * 2. Marissa Page
-* 3.
-* 4.
+* 3. Kristy Prince
+* 4. Levi Sargeant
 * 5.
 * ******************************************** -->
     <body>
@@ -43,10 +43,10 @@
                         <h3 class="heading">Current Conditions</h3>
                         <ul class="info">
                             <li id="w-info"></li>
-                            <li><b>Precipitation:</b> 0<!-- java -->%</li>
+                            <li id="rain-info"></li>
                         </ul>
                         <div class="mobile" id="condition">
-                            <span id="icon"></span>
+                            <p id="icon"></p>
                             <span id="outlook"></span>
                         </div>
                     </section>
@@ -55,7 +55,7 @@
                         <h3 class="mobile heading" id="temp"><b>Current Temp</b></h3>
                         <b id="cur-temp"></b>
                         <p class="mobile" id="high-low">Today's High and Low</p>
-                        <p> <span class="screen">&#9728;</span> <b>90<!-- java --> F / 66<!-- java --> F</b></p>
+                        <p id="show-high-low"><span class="screen" id="icon"></span></p>
                     </section>
 
                     <section class="mobile" id="hourly">
