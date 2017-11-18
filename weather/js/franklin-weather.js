@@ -23,32 +23,35 @@ $(function () {
   // Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
-        url : "http://api.wunderground.com/api/11c33fe5e1c8a83a/geolookup/conditions/q/" + lat + "," + long + ".json",
+        url : "http://api.wunderground.com/api/11c33fe5e1c8a83a/geolookup/conditions/forecast/q/ID/Frankling.json",
         dataType : "jsonp",
         success : function(data) {
             var location_c = data['location']['city'];
             var location_s = data['location']['state'];
             var temp_f = data['current_observation']['temp_f'];
             var overview = data['current_observation']['weather'];
+            var imgrep = data['current_observation']['icon_url'];
             var blow = data['current_observation']['wind_mph'];
-            var humid = data['current_observation']['relative_humidity'];
-            var feel = data['current_observation']['feelslike_f'];
-            // rain, feels like
+            var rain = data.forecast.simpleforecast.forecastday[1].pop;
+            var temp_high = data.forecast.simpleforecast.forecastday[0].high.fahrenheit;
+            var temp_low = data.forecast.simpleforecast.forecastday[0].low.fahrenheit;
 
-            console.log("Current weather in "+location+" is "+temp_f);
-
-            $("#cityDisplay").html( location_c + ', ' + location_s );
+//            console.log(data);
+//
+//            console.log(temp_high, temp_low);
 
             let round = Math.round(temp_f);
-            $("#currentTemp").html(round + '&deg;F');
+            $("#cur-temp").html(round + '&deg;F');
 
-            $("#summary").html(overview);
+//            $("#outlook").html('<span> <img src=' + imgrep + '><b>' + overview + '</b></span>');
+            $("#outlook").html('<span> <b>' + overview + '</b></span>');
+            $("#icon").html('<img src='+ imgrep +'>')
 
-            $("#add1").html('Wind: ' + blow + 'mph');
+            $("#w-info").html('<b>Wind: </b>' + blow + ' mph');
 
-            $("#add2").html('Humidity: ' + humid);
+            $("#rain-info").html('<b>Precipitation: </b>' + rain + ' %');
 
-            $("#add3").html('Feels like: ' + feel + '&deg;F');
+            $("#show-high-low").html('<b>' + temp_high + '&deg;F / ' + temp_low + '&deg;F</b>')
 
             $("#cover").fadeOut(250);
         }

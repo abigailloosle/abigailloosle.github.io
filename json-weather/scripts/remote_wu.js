@@ -37,6 +37,8 @@ $(function () {
 
             console.log(data);
 
+            $("#city-name-add").prepend(location_c + ', ' + location_s);
+
             $("#city-display").html( location_c + ', ' + location_s );
 
             let round = Math.round(temp_f);

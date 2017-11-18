@@ -32,6 +32,7 @@ $(function () {
             var overview = data['current_observation']['weather'];
             var imgrep = data['current_observation']['icon_url'];
             var blow = data['current_observation']['wind_mph'];
+            var direc = data['current_observation']['wind_dir'];
             var rain = data.forecast.simpleforecast.forecastday[1].pop;
             var temp_high = data.forecast.simpleforecast.forecastday[0].high.fahrenheit;
             var temp_low = data.forecast.simpleforecast.forecastday[0].low.fahrenheit;
@@ -40,20 +41,22 @@ $(function () {
 //
 //            console.log(temp_high, temp_low);
 
+            $("#city-name-add").prepend(location_c + ', ' + location_s);
+
             $("#city-name").html(location_c + ', ' + location_s);
 
             let round = Math.round(temp_f);
             $("#cur-temp").html(round + '&deg;F');
 
-            $("#outlook").html('<span> <img src=' + imgrep + '><b>' + overview + '</b></span>');
+//            $("#outlook").html('<span> <img src=' + imgrep + '><b>' + overview + '</b></span>');
+            $("#outlook").html('<span> <b>' + overview + '</b></span>');
+            $("#icon").html('<img src='+ imgrep +'>')
 
-            $("#w-info").html('<b>Wind: </b>' + blow + 'mph');
+            $("#w-info").html('<b>Wind: </b>' + direc + ' ' + blow + ' mph');
 
-            $("#rain-info").html('<b>Precipitation:</b>' + rain + '%');
+            $("#rain-info").html('<b>Precipitation: </b>' + rain + ' %');
 
             $("#show-high-low").html('<b>' + temp_high + '&deg;F / ' + temp_low + '&deg;F</b>')
-
-            $("#icon").html('<img src='+ imgrep + '>')
 
             $("#cover").fadeOut(250);
         }
