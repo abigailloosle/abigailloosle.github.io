@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <title id="city-name"></title>
+        <meta name="Weather forecast for Franklin, Idaho" content="Interactive and accurate weather landing page for Franklin, Idaho.">
+        <!-- <meta author="Abigail Loosle"> -->
+        <meta name="viewport" content="width=device-width">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+        <link rel="stylesheet" href="/search/cs-search.css" type="text/css" media="screen">
+        <script
+                src="https://code.jquery.com/jquery-3.2.1.min.js"
+                integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+                crossorigin="anonymous"></script>
+    </head>
+    <!-- *********************************************
+* Who Did You Collaborate With On This Assessment?
+* 1. Abigail King
+* 2. Marissa Page
+* 3. Kristy Prince
+* 4. Levi Sargeant
+* 5.
+* ******************************************** -->
+    <body>
+        <header>
+            <h1><i>Looking for something?</i></h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href="http://abigailloosle.github.io/weather/index.html" title="Go to home page">Home</a></li>
+                <li><a href="#" title="Franklin weather">Franklin</a></li>
+                <li><a href="https://abigailloosle.github.io/weather/greenville.html" title="Greenville weather">Greenville</a></li>
+                <li><a href="https://abigailloosle.github.io/weather/springfield.html" title="Springfield Illinois weather">Springfield</a></li>
+                <li><a href="#" title="Search the site">Search</a></li>
+            </ul>
+        </nav>
+        <main>
+            <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+                <input type="search" name="query" id="query">
+                <input type="submit" name="submit" value="Search" id="send">
+            </form>
+
+            <section id="searchResults">
+                <h2>Search Results</h2>
+            </section>
+        </main>
+        <footer>
+            &copy; 2017 | Abigail Loosle
+        </footer>
+    </body>
+
+    <script src="/search/ex-search.js"></script>
+</html>
