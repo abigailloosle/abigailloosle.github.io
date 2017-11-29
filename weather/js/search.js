@@ -26,7 +26,7 @@ $('#query').keyup(function() {
 // Get the data from the wunderground API
 function getData(input){
     $.ajax({
-        url : "http://api.wunderground.com/api/11c33fe5e1c8a83a/geolookup/conditions/forecast/q/" + input + ".json",
+        url : "https://api.wunderground.com/api/11c33fe5e1c8a83a/geolookup/conditions/forecast/q/" + input + ".json",
         dataType : "jsonp",
         success : function(data) {
             var location_c = data['location']['city'];
