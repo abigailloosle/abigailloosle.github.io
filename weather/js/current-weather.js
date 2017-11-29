@@ -20,7 +20,7 @@ $(function () {
 
   })();
 
-  // Get the data from the wunderground API
+// Get the data from the wunderground API
   function getData(lat, long){
     $.ajax({
         url : "http://api.wunderground.com/api/11c33fe5e1c8a83a/geolookup/conditions/forecast/q/" + lat + "," + long + ".json",
@@ -63,7 +63,7 @@ $(function () {
     });
   }
 
-  // A function for changing a string to TitleCase
+// A function for changing a string to TitleCase
   function toTitleCase(str){
     return str.replace(/\w+/g, function(txt){return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();});
   }

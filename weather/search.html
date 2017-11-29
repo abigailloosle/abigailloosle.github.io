@@ -2,24 +2,24 @@
 <html lang="en-us">
     <head>
         <meta charset="utf-8">
-        <title id="city-name-add"> | Weather Info</title>
+        <title id="city-name"></title>
         <meta name="Weather forecast for Franklin, Idaho" content="Interactive and accurate weather landing page for Franklin, Idaho.">
         <!-- <meta author="Abigail Loosle"> -->
         <meta name="viewport" content="width=device-width">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
 
-        <link rel="stylesheet" href="screen.css" type="text/css" media="screen">
+        <link rel="stylesheet" href="/weather/screen.css" type="text/css" media="screen">
         <script
                 src="https://code.jquery.com/jquery-3.2.1.min.js"
                 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
                 crossorigin="anonymous"></script>
     </head>
-<!-- *********************************************
+    <!-- *********************************************
 * Who Did You Collaborate With On This Assessment?
 * 1. Abigail King
-* 2. Marissa Page
-* 3. Kristy Prince
-* 4. Levi Sargeant
+* 2. Kristy Prince
+* 3. Suyeon Yang
+* 4.
 * 5.
 * ******************************************** -->
     <body>
@@ -36,6 +36,15 @@
             </ul>
         </nav>
         <main>
+            <form method="get" action="//autocomplete.wunderground.com/aq" id="srchfrm">
+                <input type="search" name="query" id="query">
+                <input type="submit" name="submit" value="Search" id="send">
+            </form>
+
+            <section id="searchResults">
+                <h2>Search Results</h2>
+            </section>
+
             <article>
                 <h2 id="city-name"></h2>
                 <div>
@@ -61,40 +70,16 @@
                     <section class="mobile" id="hourly">
                         <h3 class="heading"><b>Hourly Forecast</b></h3>
                         <ul id="times">
-                            <li>12am   67F</li>
-                            <li>1am   67F</li>
-                            <li>2am   69F</li>
-                            <li>3am   69F</li>
-                            <li>4am   69F</li>
-                            <li>5am   70F</li>
-                            <li>6am   69F</li>
-                            <li>7am   72F</li>
-                            <li>8am   74F</li>
-                            <li>9am   77F</li>
-                            <li>10am   79F</li>
-                            <li>11am   81F</li>
-                            <li>12pm   84F</li>
-                            <li>1pm   86F</li>
-                            <li>2pm   88F</li>
-                            <li>3pm   90F</li>
-                            <li>4pm   90F</li>
-                            <li>5pm   85F</li>
-                            <li>6pm   83F</li>
-                            <li>7pm   79F</li>
-                            <li>8pm   74F</li>
-                            <li>9pm   70F</li>
-                            <li>10pm   68F</li>
-                            <li>11pm   66F</li>
+                            <li>This widget under construction</li>
                         </ul>
                     </section>
                 </div>
             </article>
         </main>
         <footer>
-            &copy; 2017 Weather Site | Abigail Loosle
+            &copy; 2017 | Abigail Loosle
         </footer>
     </body>
 
-<!--    <script src="/weather/scripts/modules.js"></script>-->
-    <script src="/weather/js/current-weather.js"></script>
+    <script src="/weather/js/search.js"></script>
 </html>
