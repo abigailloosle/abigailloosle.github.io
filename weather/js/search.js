@@ -1,4 +1,5 @@
 let object
+
 // Search cities
 $('#query').keyup(function() {
         var value = $('#query').val();
