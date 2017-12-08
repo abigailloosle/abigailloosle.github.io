@@ -43,16 +43,16 @@ $("#navigation").on("click", "a", function (evt) {
                 var cost = data[linkclick].price;
                 var rate = data[linkclick].reviews;
 
-                console.log('Product: ' + prod_name);
+                console.log('Rating is: ' + rate);
 
 
                 $("title").html(prod_title + ' | ACME');
                 $("#product").text(prod_name);
                 $("#product-img").html('<img src='+ pic +'>');
                 $("#descrip").text(tell_more);
-                $("#manufac").html('<b>Made by: ' + make + '</b>');
+                $("#manufac").html('<b>Made by: </b>' + make );
+                $("#revi").html('<b>Reviews: </b>' + rate + '/5 stars');
                 $("#price").html('<b>Price: $' + cost + '</b>');
-                $("#review").html('<b>Reviews: ' + make + '/5 stars</b>');
 
             }
         });
