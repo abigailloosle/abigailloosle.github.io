@@ -44,6 +44,31 @@ nav ul {display: flex;
     padding-left: 2em;
     padding-right: 2em;}
 
+nav a {text-decoration: none;}
+
+a:link {
+    color: #FFF;
+}
+
+a:visited {
+    color: #990033;
+}
+
+a:focus {
+    border-bottom: 1px solid;
+    background: #FFB02E;
+}
+
+a:hover {
+    border-bottom: 1px solid;
+    background: #FFE62E;
+}
+
+a:active {
+    background: #FFF;
+    color: #FFE62E;
+}
+
 .wrapper {background-color: rgba(255, 255, 255,.85);
     margin: 1.5em;
     padding-bottom: 5%;}
