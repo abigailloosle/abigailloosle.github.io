@@ -126,11 +126,20 @@ hr {height: 5px;}
 .food {width: 40%;
     padding: 5%;}
 
-.food img {border-style: solid;
-    border-width: 10px;
-    border-color: #808080;}
+.food img {border: solid 10px #808080;}
 
 #review {width: 100%;}
+
+/* products */
+#product-content {margin-left: 8%;
+    margin-right: 8%;}
+
+#product-contain {display: flex;}
+
+#product-img {width: 50%;}
+
+#product-info {width: 60%;
+    padding-left: 8%;}
 
 /********************************
 * Medium Screen Styles
