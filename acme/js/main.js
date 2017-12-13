@@ -24,7 +24,7 @@ $("#navigation").on("click", "a", function (evt) {
         document.getElementById("product-content").style.display = "none";
         document.getElementById("home-content").style.display = "block";
 
-        $("title").html("Home | ACME");
+        $("title").text("Home | ACME");
     }
     else {
         $.ajax({
@@ -44,13 +44,14 @@ $("#navigation").on("click", "a", function (evt) {
                 var make = data[linkclick].manufacturer;
                 var cost = data[linkclick].price;
                 var rate = data[linkclick].reviews;
+                var alt = data[linkclick].alternate;
 
                 console.log('Rating is: ' + rate);
 
 
                 $("title").html(prod_title + ' | ACME');
                 $("#product").text(prod_name);
-                $("#product-img").html('<img src='+ pic +'>');
+                $("#product-img").html('<img src='+ pic +' alt="' + alt + '">');
                 $("#descrip").text(tell_more);
                 $("#manufac").html('<b>Made by: </b>' + make );
                 $("#revi").html('<b>Reviews: </b>' + rate + '/5 stars');
