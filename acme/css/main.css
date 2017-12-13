@@ -61,12 +61,12 @@ a:focus {
 
 a:hover {
     border-bottom: 1px solid;
-    background: #FFE62E;
+    background: #0000EE;
 }
 
 a:active {
     background: #FFF;
-    color: #FFE62E;
+    color: #0000EE;
 }
 
 .wrapper {background-color: rgba(255, 255, 255,.85);
@@ -140,6 +140,9 @@ hr {height: 5px;}
 
 #product-info {width: 60%;
     padding-left: 8%;}
+
+#price {font-size: 2em;
+    color: #990033;}
 
 /********************************
 * Medium Screen Styles

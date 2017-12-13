@@ -23,6 +23,8 @@ $("#navigation").on("click", "a", function (evt) {
     if (linkclick === 'Home'){
         document.getElementById("product-content").style.display = "none";
         document.getElementById("home-content").style.display = "block";
+
+        $("title").html("Home | ACME");
     }
     else {
         $.ajax({
