@@ -1,0 +1,89 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+@import "partials/_variables.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 20px;
+  line-height: 1.25em;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #efefef;
+}
+
+button {
+  background-color: $cot;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: none;
+    margin: 0 10% 0 15px;
+
+    img {
+      width: 80px;
+      margin-top: 5px;
+    }
+
+    li {
+      cursor: pointer;
+    }
+  }
+
+  .upnav {
+    margin-top: 15px;
+    padding-right: 7px;
+
+    &.bump {
+      padding-left: 20px;
+    }
+  }
+
+  .upbutton {
+    margin-top: 10px;
+  }
+}
+
+header {
+  margin: 0 2% 0 2%;
+  overflow: hidden;
+
+  h1 {
+    color: $main;
+    font-size: 50px;
+  }
+
+  p {
+    color: black;
+  }
+}
+
+.passions {
+  background-color: $dark;
+  color: white;
+  padding: 10% 5% 5% 10%;
+
+  h1 {
+    font-size: 30px;
+  }
+
+  .passion_title {
+    font-weight: 900;
+  }
+}
