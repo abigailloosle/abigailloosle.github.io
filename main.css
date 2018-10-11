@@ -9,7 +9,8 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  background-color: #efefef; }
+  background-color: #efefef;
+  color: white; }
 
 button {
   background-color: #e8c547;
@@ -23,22 +24,19 @@ button {
   cursor: pointer;
   border-radius: 16px; }
 
+nav img {
+  width: 80px;
+  margin-top: 5px; }
 nav ul {
   display: flex;
   flex-direction: row;
   list-style-type: none;
   padding: none;
-  margin: 0 10% 0 15px; }
-  nav ul img {
-    width: 80px;
-    margin-top: 5px; }
+  width: 300px;
+  margin-right: 5%;
+  color: black; }
   nav ul li {
     cursor: pointer; }
-nav .upnav {
-  margin-top: 15px;
-  padding-right: 7px; }
-  nav .upnav.bump {
-    padding-left: 20px; }
 nav .upbutton {
   margin-top: 10px; }
 
@@ -50,14 +48,66 @@ header {
     font-size: 50px; }
   header p {
     color: black; }
+  header .hide-pic {
+    overflow: hidden;
+    margin: auto 10% 0 auto; }
 
 .passions {
   background-color: #274361;
   color: white;
   padding: 10% 5% 5% 10%; }
   .passions h1 {
-    font-size: 30px; }
+    font-size: 30px;
+    letter-spacing: 0.05em;
+    margin-bottom: 5%; }
   .passions .passion_title {
-    font-weight: 900; }
+    font-weight: 900;
+    letter-spacing: 0.1em; }
+    .passions .passion_title + p {
+      margin-bottom: 2%; }
+
+.projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center; }
+  .projects .box1 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: #3a8ca3; }
+  .projects .box2 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: #fe9000; }
+  .projects .box3 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: #274361; }
+  .projects .box4 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: #229edb; }
+  .projects .box5 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: #92278f; }
+  .projects .box6 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: #46b2af; }
+
+.about {
+  background-color: #3a8ca3; }
 
 /*# sourceMappingURL=main.css.map */
