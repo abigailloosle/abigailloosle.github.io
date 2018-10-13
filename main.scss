@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
 @import "partials/_variables.scss";
+@import "partials/_welcome.scss";
 
 * {
   margin: 0;
@@ -16,64 +17,8 @@ body {
   color: white;
 }
 
-button {
-  background-color: $cot;
-  border: none;
-  color: black;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-
-nav {
-  img {
-    width: 80px;
-    margin-top: 5px;
-  }
-
-  ul {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    padding: none;
-    width: 300px;
-    margin-right: 5%;
-    color: black;
-
-    li {
-      cursor: pointer;
-    }
-  }
-
-  .upbutton {
-    margin-top: 10px;
-  }
-}
-
-header {
-  margin: 0 2% 0 2%;
-  overflow: hidden;
-
-  h1 {
-    color: $main;
-    font-size: 50px;
-  }
-
-  p {
-    color: black;
-  }
-
-  .hide-pic {
-    overflow: hidden;
-    margin: auto 10% 0 auto;
-  }
-}
-
 .passions {
+  height: 100vh;
   background-color: $dark;
   color: white;
   padding: 10% 5% 5% 10%;
@@ -92,9 +37,22 @@ header {
       margin-bottom: 2%;
     }
   }
+  
+  #oj {
+    color: $a3;
+  }
+
+  #pa {
+    color: $a1;
+  }
+
+  #gs {
+    color: $a2;
+  }
 }
 
 .projects {
+  height: 100vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;

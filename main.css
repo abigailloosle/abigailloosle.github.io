@@ -1,4 +1,54 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+button {
+  background-color: #e8c547;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px; }
+
+nav {
+  width: 100%; }
+  nav img {
+    width: 80px;
+    margin-top: 5px; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: none;
+    width: 300px;
+    margin-right: 5%;
+    color: black; }
+    nav ul li {
+      cursor: pointer; }
+      nav ul li a {
+        text-decoration: none;
+        padding: 15px; }
+  nav .upbutton {
+    margin-top: 10px; }
+
+header {
+  height: 590px;
+  background-image: url("img/me.png");
+  background-size: 750px;
+  background-repeat: no-repeat;
+  background-position: left -100px bottom -10px;
+  overflow: hidden; }
+  header h1 {
+    color: #46b2af;
+    font-size: 65px;
+    margin-top: .7em; }
+  header p {
+    color: black; }
+  header .hide-pic {
+    overflow: hidden;
+    margin: auto 10% 0 auto; }
+
 * {
   margin: 0;
   padding: 0;
@@ -12,48 +62,9 @@ body {
   background-color: #efefef;
   color: white; }
 
-button {
-  background-color: #e8c547;
-  border: none;
-  color: black;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px; }
-
-nav img {
-  width: 80px;
-  margin-top: 5px; }
-nav ul {
-  display: flex;
-  flex-direction: row;
-  list-style-type: none;
-  padding: none;
-  width: 300px;
-  margin-right: 5%;
-  color: black; }
-  nav ul li {
-    cursor: pointer; }
-nav .upbutton {
-  margin-top: 10px; }
-
-header {
-  margin: 0 2% 0 2%;
-  overflow: hidden; }
-  header h1 {
-    color: #46b2af;
-    font-size: 50px; }
-  header p {
-    color: black; }
-  header .hide-pic {
-    overflow: hidden;
-    margin: auto 10% 0 auto; }
-
 .passions {
-  background-color: #274361;
+  height: 100vh;
+  background-color: #2B263B;
   color: white;
   padding: 10% 5% 5% 10%; }
   .passions h1 {
@@ -65,8 +76,15 @@ header {
     letter-spacing: 0.1em; }
     .passions .passion_title + p {
       margin-bottom: 2%; }
+  .passions #oj {
+    color: #fe9000; }
+  .passions #pa {
+    color: #229edb; }
+  .passions #gs {
+    color: #92278f; }
 
 .projects {
+  height: 100vh;
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
@@ -87,7 +105,7 @@ header {
     height: 130px;
     border-radius: 20px;
     margin: 5%;
-    background-color: #274361; }
+    background-color: #2B263B; }
   .projects .box4 {
     width: 130px;
     height: 130px;

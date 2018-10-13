@@ -1,0 +1,67 @@
+button {
+  background-color: $cot;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
+nav {
+    width: 100%;
+  img {
+    width: 80px;
+    margin-top: 5px;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: none;
+    width: 300px;
+    margin-right: 5%;
+    color: black;
+
+    li {
+      cursor: pointer;
+
+      a {
+        text-decoration: none;
+        padding: 15px;
+      }
+    }
+  }
+
+  .upbutton {
+    margin-top: 10px;
+  }
+}
+
+header {
+  height: 590px;
+  background-image: url("img/me.png");
+  background-size: 750px;
+  background-repeat: no-repeat;
+  background-position: left -100px bottom -10px;
+  overflow: hidden;
+
+  h1 {
+    color: $main;
+    font-size: 65px;
+    margin-top: .7em;
+  }
+
+  p {
+    color: black;
+  }
+
+  .hide-pic {
+    overflow: hidden;
+    margin: auto 10% 0 auto;
+  }
+}
