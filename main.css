@@ -12,27 +12,31 @@ button {
   border-radius: 16px; }
 
 nav {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
   width: 100%; }
   nav img {
     width: 80px;
     margin-top: 5px; }
+  nav .upnav {
+    padding-top: 15px; }
   nav ul {
     display: flex;
     flex-direction: row;
     list-style-type: none;
-    padding: none;
-    width: 300px;
-    margin-right: 5%;
-    color: black; }
+    padding: none; }
     nav ul li {
       cursor: pointer; }
       nav ul li a {
         text-decoration: none;
-        padding: 15px; }
+        padding: 15px;
+        color: black; }
   nav .upbutton {
     margin-top: 10px; }
 
 header {
+  padding: 5%;
   height: 590px;
   background-image: url("img/me.png");
   background-size: 750px;
@@ -42,40 +46,28 @@ header {
   header h1 {
     color: #46b2af;
     font-size: 65px;
-    margin-top: .7em; }
+    margin-top: 0.7em; }
   header p {
     color: black; }
   header .hide-pic {
     overflow: hidden;
     margin: auto 10% 0 auto; }
 
-* {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  vertical-align: baseline;
-  font-size: 20px;
-  line-height: 1.25em; }
-
-body {
-  font-family: "Montserrat", sans-serif;
-  background-color: #efefef;
-  color: white; }
-
 .passions {
-  height: 100vh;
-  background-color: #2B263B;
+  height: 90vh;
+  background-color: #131c33;
   color: white;
-  padding: 10% 5% 5% 10%; }
+  padding: 25% 5% 5% 10%;
+  justify-content: center; }
   .passions h1 {
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 0.05em;
-    margin-bottom: 5%; }
+    margin-bottom: 20%; }
   .passions .passion_title {
     font-weight: 900;
     letter-spacing: 0.1em; }
     .passions .passion_title + p {
-      margin-bottom: 2%; }
+      margin-bottom: 15%; }
   .passions #oj {
     color: #fe9000; }
   .passions #pa {
@@ -105,7 +97,7 @@ body {
     height: 130px;
     border-radius: 20px;
     margin: 5%;
-    background-color: #2B263B; }
+    background-color: #131c33; }
   .projects .box4 {
     width: 130px;
     height: 130px;
@@ -125,7 +117,66 @@ body {
     margin: 5%;
     background-color: #46b2af; }
 
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 20px;
+  line-height: 1.25em; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #efefef;
+  color: white; }
+
 .about {
-  background-color: #3a8ca3; }
+  background-color: #3a8ca3;
+  padding: 10% 5% 5% 10%; }
+  .about h2 {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    margin-bottom: 15%; }
+  .about p {
+    padding-bottom: 10%; }
+
+.dev,
+.design {
+  border: 2px solid black;
+  border-radius: 10px;
+  justify-content: center; }
+  .dev h2,
+  .design h2 {
+    padding: 5px;
+    border-radius: 10px; }
+
+.dev h2 {
+  background-color: #92278f; }
+
+.design h2 {
+  background-color: #229edb; }
+
+footer {
+  background-color: #229edb;
+  height: 100px;
+  margin-top: 10%; }
+
+@media (min-width: 66.7em) {
+  header {
+    height: 530px;
+    background-size: 850px;
+    background-position: left 500px bottom -12px; }
+
+  .passions {
+    height: 35vh;
+    background-color: #131c33;
+    padding: 8% 5% 5% 10%;
+    justify-content: center; }
+    .passions h1 {
+      margin-bottom: 10%; }
+    .passions .passion_title {
+      letter-spacing: 0.1em; }
+      .passions .passion_title + p {
+        margin-bottom: 5%; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,49 @@
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+  .box1 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: $darkg;
+  }
+  .box2 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: $a3;
+  }
+  .box3 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: $dark;
+  }
+  .box4 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: $a1;
+  }
+  .box5 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: $a2;
+  }
+  .box6 {
+    width: 130px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    background-color: $main;
+  }
+}

@@ -12,10 +12,18 @@ button {
 }
 
 nav {
-    width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  width: 100%;
+
   img {
     width: 80px;
     margin-top: 5px;
+  }
+
+  .upnav {
+    padding-top: 15px;
   }
 
   ul {
@@ -23,9 +31,6 @@ nav {
     flex-direction: row;
     list-style-type: none;
     padding: none;
-    width: 300px;
-    margin-right: 5%;
-    color: black;
 
     li {
       cursor: pointer;
@@ -33,6 +38,7 @@ nav {
       a {
         text-decoration: none;
         padding: 15px;
+        color: black;
       }
     }
   }
@@ -43,6 +49,7 @@ nav {
 }
 
 header {
+  padding: 5%;
   height: 590px;
   background-image: url("img/me.png");
   background-size: 750px;
@@ -53,7 +60,7 @@ header {
   h1 {
     color: $main;
     font-size: 65px;
-    margin-top: .7em;
+    margin-top: 0.7em;
   }
 
   p {

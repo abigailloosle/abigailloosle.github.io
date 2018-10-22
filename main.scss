@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
 @import "partials/_variables.scss";
 @import "partials/_welcome.scss";
+@import "partials/_passions.scss";
+@import "partials/_projects.scss";
 
 * {
   margin: 0;
@@ -17,90 +19,70 @@ body {
   color: white;
 }
 
-.passions {
-  height: 100vh;
-  background-color: $dark;
-  color: white;
-  padding: 10% 5% 5% 10%;
-
-  h1 {
-    font-size: 30px;
-    letter-spacing: 0.05em;
-    margin-bottom: 5%;
-  }
-
-  .passion_title {
-    font-weight: 900;
-    letter-spacing: 0.1em;
-
-    & + p {
-      margin-bottom: 2%;
-    }
-  }
-  
-  #oj {
-    color: $a3;
-  }
-
-  #pa {
-    color: $a1;
-  }
-
-  #gs {
-    color: $a2;
-  }
-}
-
-.projects {
-  height: 100vh;
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-
-  .box1 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
-    background-color: $darkg;
-  }
-  .box2 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
-    background-color: $a3;
-  }
-  .box3 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
-    background-color: $dark;
-  }
-  .box4 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
-    background-color: $a1;
-  }
-  .box5 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
-    background-color: $a2;
-  }
-  .box6 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
-    background-color: $main;
-  }
-}
-
 .about {
   background-color: $darkg;
+  padding: 10% 5% 5% 10%;
+
+  h2 {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    margin-bottom: 15%;
+  }
+
+  p {
+    padding-bottom: 10%;
+  }
+}
+
+.dev,
+.design {
+  border: 2px solid black;
+  border-radius: 10px;
+  justify-content: center;
+
+  & h2 {
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
+.dev h2 {
+  background-color: $a2;
+}
+
+.design h2 {
+  background-color: $a1;
+}
+
+footer {
+  background-color: $a1;
+  height: 100px;
+  margin-top: 10%;
+}
+
+@media (min-width: 66.7em) {
+  header {
+    height: 530px;
+    background-size: 850px;
+    background-position: left 500px bottom -12px;
+  }
+
+  .passions {
+    height: 35vh;
+    background-color: $dark;
+    padding: 8% 5% 5% 10%;
+    justify-content: center;
+
+    h1 {
+      margin-bottom: 10%;
+    }
+
+    .passion_title {
+      letter-spacing: 0.1em;
+
+      & + p {
+        margin-bottom: 5%;
+      }
+    }
+  }
 }
