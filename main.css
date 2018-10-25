@@ -80,43 +80,166 @@ header {
   display: flex;
   flex-flow: row wrap;
   justify-content: center; }
+  .projects .panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 130px;
+    border-radius: 20px;
+    margin: 5%;
+    padding-left: 4%;
+    padding-right: 4%; }
   .projects .box1 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
     background-color: #3a8ca3; }
+    .projects .box1:hover {
+      background-color: #347e92; }
   .projects .box2 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
     background-color: #fe9000; }
+    .projects .box2:hover {
+      background-color: #e48100; }
   .projects .box3 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
     background-color: #131c33; }
+    .projects .box3:hover {
+      background-color: #2a3247; }
   .projects .box4 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
     background-color: #229edb; }
+    .projects .box4:hover {
+      background-color: #1e8ec5; }
   .projects .box5 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
     background-color: #92278f; }
+    .projects .box5:hover {
+      background-color: #832380; }
   .projects .box6 {
-    width: 130px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
     background-color: #46b2af; }
 
+.portfolio-items {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 75em; }
+
+.portfolio-item {
+  position: relative;
+  overflow: hidden;
+  flex: 1 1 20rem; }
+  .portfolio-item .portfolio-image {
+    display: block;
+    width: 100%; }
+  .portfolio-item figcaption {
+    position: absolute;
+    top: 100%;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    padding: 1em;
+    background: rgba(146, 39, 143, 0.75);
+    color: #ffffff;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    transition: top ease-in-out 250ms; }
+  .portfolio-item:hover figcaption, .portfolio-item:focus figcaption {
+    top: 0; }
+
+.portfolio-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: auto; }
+
+.portfolio-desc {
+  display: none; }
+
+.portfolio-link {
+  color: white;
+  font-size: 1.1rem;
+  text-decoration: none;
+  border-bottom: 3px solid #ffffff;
+  align-self: flex-start;
+  text-decoration: none; }
+
+.portfolio-modal {
+  position: fixed;
+  z-index: 10;
+  top: 2em;
+  bottom: 2em;
+  left: 2em;
+  right: 2em;
+  background: white;
+  box-shadow: 0 0 0 3em rgba(0, 0, 0, 0.5);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: none; }
+  .portfolio-modal.is-open {
+    display: block; }
+
+.modal-close {
+  background: white;
+  position: fixed;
+  left: 1em;
+  top: 1em;
+  border: 0;
+  width: 2em;
+  height: 2em;
+  padding: 4px 0 0;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
+.portfolio-header {
+  text-align: left;
+  padding: 5em 0;
+  margin-bottom: 2em;
+  background-size: cover;
+  background-position: center; }
+
+.header-one {
+  background-image: url(../img/portfolio-01.jpg); }
+
+.header-two {
+  background-image: url(../img/portfolio-02.jpg); }
+
+.portfolio-title-box {
+  background: rgba(146, 39, 143, 0.75);
+  padding: 3em 0 3em 3em;
+  color: white;
+  width: 70%; }
+  .portfolio-title-box .portfolio-title {
+    font-size: 3.5rem;
+    display: inline-block; }
+    .portfolio-title-box .portfolio-title::after {
+      content: "";
+      display: block;
+      height: 1px;
+      margin: 0.5em 0;
+      background: white;
+      width: 100%; }
+
+.portfolio-subtitle {
+  font-size: 1rem; }
+
+.portfolio-content {
+  text-align: left;
+  width: 85%;
+  margin: 0 auto;
+  padding-bottom: 2em; }
+
+.portfolio-full-width {
+  width: 100vw;
+  max-width: initial;
+  margin: 2em calc(50% - 50vw);
+  height: 20vh;
+  object-fit: cover; }
+
+@keyframes modalIn {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes modalOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
 * {
   margin: 0;
   padding: 0;
@@ -149,6 +272,9 @@ body {
   .design h2 {
     padding: 5px;
     border-radius: 10px; }
+  .dev svg,
+  .design svg {
+    width: 10%; }
 
 .dev h2 {
   background-color: #92278f; }
