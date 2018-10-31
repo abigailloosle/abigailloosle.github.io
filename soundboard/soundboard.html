@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>JS Drum Kit</title>
+    <link rel="stylesheet" href="sound_style.css">
+
+    <script type="text/javascript">
+        var audioPaths = {"purple": "sounds/clap.wav",
+                          "green": "sounds/hihat.wav",
+                          "lblue": "sounds/kick.wav",
+                          "red": "sounds/openhat.wav",
+                          "yellow": "sounds/boom.wav",
+                          "black": "sounds/ride.wav",
+                          "blue":"sounds/snare.wav",
+                          "pink": "sounds/tom.wav"}
+        var thePlayer = null
+
+        function setUp(){
+            thePlayer = document.querySelector("#sound")
+
+            thePlayer.addEventListener("ended", function() {
+                thePlayer.currentButton.classList.toggle('playing')
+
+            }, true)
+
+            var theButtons = document.querySelectorAll(".button")
+
+            for(var i = 0; i < theButtons.length; i++){
+                var aButton = theButtons[i]
+                aButton.addEventListener("touchstart", function(){
+                    // turn off all buttons with class of playing
+                    var playingButtons = document.querySelectorAll('.playing')
+                    var numPlaying = playingButtons.length
+                    for (var i = 0; i < numPlaying; i++){
+                        playingButtons[i].classList.toggle('playing')
+                    }
+
+                    // turn on all selected button
+                    var theAudioPath = audioPaths[this.id]
+                    thePlayer.src = theAudioPath
+
+                    thePlayer.currentButton = this
+
+                    thePlayer.play()
+
+                    // animation
+                    this.classList.toggle('playing')
+                    // aButton.classList.remove('playing')
+                });
+            }
+        }
+
+    </script>
+</head>
+
+<body onload="setUp()">
+    <div class="beats">
+        <div class="button" id="purple">
+            <span class="sound">clap</span>
+        </div>
+
+        <div class="button" id="green">
+            <span class="sound">hihat</span>
+        </div>
+
+        <div class="button" id="lblue">
+            <span class="sound">kick</span>
+        </div>
+
+        <div class="button" id="red">
+            <span class="sound">openhat</span>
+        </div>
+
+        <div class="button" id="yellow">
+            <span class="sound">boom</span>
+        </div>
+
+        <div class="button" id="black">
+            <span class="sound">ride</span>
+        </div>
+
+        <div class="button" id="blue">
+            <span class="sound">snare</span>
+        </div>
+
+        <div class="button" id="pink">
+            <span class="sound">tom</span>
+        </div>
+    </div>
+
+    <audio id="sound" src="sounds/clap.wav"></audio>
+
+    <footer>
+        <span>MAKE SOME NOISE!</span>
+    </footer>
+</body>
+
+</html>
