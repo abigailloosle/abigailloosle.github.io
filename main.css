@@ -261,12 +261,16 @@ header {
   margin-bottom: 5%; }
   .dev h2,
   .design h2 {
+    font-size: 28px;
+    letter-spacing: 0.05em;
     padding: 5px;
     border-radius: 10px;
     color: white; }
   .dev ul,
   .design ul {
-    list-style-type: none; }
+    list-style-type: none;
+    padding-top: 2%;
+    padding-bottom: 2%; }
   .dev svg,
   .design svg {
     width: 10%;
@@ -303,7 +307,7 @@ body {
 
 footer {
   background-color: #229edb;
-  height: 100px;
+  height: 60px;
   margin-top: 10%;
   padding: 5%; }
   footer button {
@@ -322,7 +326,7 @@ footer {
       width: 400px; }
 
   .passions {
-    height: 50vh;
+    height: 35%;
     padding: 5% 5% 5% 5%; }
     .passions h1 {
       margin-bottom: 5%; }
@@ -356,7 +360,19 @@ footer {
       padding-bottom: 5%;
       width: 600px; }
     .about .details {
-      margin-left: 40%; }
+      margin-left: 50%; }
+
+  .projects {
+    height: 100%;
+    width: 90%;
+    margin: auto; }
+    .projects .panel {
+      width: 150px;
+      height: 200px; }
+    .projects h2 {
+      width: 60px;
+      font-size: 28px;
+      margin-left: -55px; }
 
   .skills {
     flex-direction: row; }
@@ -367,17 +383,21 @@ footer {
       padding-bottom: 5%; } }
 @media (min-width: 1200px) {
   header {
-    height: 530px;
+    height: 500px;
     background-size: 950px;
     background-position: right -100px bottom -12px; }
 
   .passions {
-    height: 55vh;
+    height: 55%;
     background-color: #131c33;
     justify-content: center; }
     .passions .passion_title {
       letter-spacing: 0.1em; }
       .passions .passion_title + p {
-        width: 800px; } }
+        width: 800px; }
+
+  .projects .panel {
+    width: 150px;
+    height: 250px; } }
 
 /*# sourceMappingURL=main.css.map */

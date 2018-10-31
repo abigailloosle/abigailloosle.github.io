@@ -37,7 +37,7 @@ body {
 
 footer {
   background-color: $a1;
-  height: 100px;
+  height: 60px;
   margin-top: 10%;
   padding: 5%;
 
@@ -65,7 +65,7 @@ footer {
   }
 
   .passions {
-    height: 50vh;
+    height: 35%;
     padding: 5% 5% 5% 5%;
 
     h1 {
@@ -114,7 +114,24 @@ footer {
     }
 
     .details {
-      margin-left: 40%;
+      margin-left: 50%;
+    }
+  }
+
+  .projects {
+    height: 100%;
+    width: 90%;
+    margin: auto;
+
+    .panel {
+      width: 150px;
+      height: 200px;
+    }
+
+    h2 {
+      width: 60px;
+      font-size: 28px;
+      margin-left: -55px;
     }
   }
 
@@ -132,13 +149,13 @@ footer {
 
 @media (min-width: 1200px) {
   header {
-    height: 530px;
+    height: 500px;
     background-size: 950px;
     background-position: right -100px bottom -12px;
   }
 
   .passions {
-    height: 55vh;
+    height: 55%;
     background-color: $dark;
     justify-content: center;
 
@@ -148,6 +165,13 @@ footer {
       & + p {
         width: 800px;
       }
+    }
+  }
+
+  .projects {
+    .panel {
+      width: 150px;
+      height: 250px;
     }
   }
 }
