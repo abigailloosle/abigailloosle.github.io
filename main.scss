@@ -37,8 +37,7 @@ body {
 
 footer {
   background-color: $a1;
-  height: 60px;
-  margin-top: 10%;
+  height: 40px;
   padding: 5%;
 
   button {
@@ -54,10 +53,24 @@ footer {
 
 // tablet view
 @media (min-width: 768px) {
+  nav {
+    img {
+      margin-left: -65%;
+    }
+
+    .hide {
+      display: inline;
+    }
+  }
+
   header {
     height: 530px;
     background-size: 850px;
     background-position: right -200px bottom -12px;
+
+    .content {
+      margin-left: 5%;
+    }
 
     p {
       width: 400px;
@@ -66,7 +79,7 @@ footer {
 
   .passions {
     height: 35%;
-    padding: 5% 5% 5% 5%;
+    padding: 5% 5% 5% 10%;
 
     h1 {
       margin-bottom: 5%;
@@ -114,7 +127,7 @@ footer {
     }
 
     .details {
-      margin-left: 50%;
+      margin-left: 39%;
     }
   }
 

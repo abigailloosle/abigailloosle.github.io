@@ -14,6 +14,32 @@
     margin: 5%;
     padding-left: 4%;
     padding-right: 4%;
+
+    a {
+      text-decoration: none;
+    }
+
+    /* unvisited link */
+    a:link {
+      color: white;
+    }
+
+    /* visited link */
+    a:visited {
+      color: green;
+    }
+
+    /* mouse over link */
+    a:hover {
+      color: white;
+      text-decoration: underline;
+    }
+
+    /* selected link */
+    a:active {
+      color: white;
+      text-decoration: none;
+    }
   }
 
   .box1 {

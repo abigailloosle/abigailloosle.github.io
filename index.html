@@ -15,8 +15,14 @@
     <nav>
         <img src="img/logo.png" alt="Logo for Abby Loosley Web Developer" class="img-stuck">
         <ul>
+            <li class="upnav hide">
+                <a href="#passions">passions</a>
+            </li>
             <li class="upnav bump">
                 <a href="#projects">projects</a>
+            </li>
+            <li class="upnav hide">
+                <a href="#about">about</a>
             </li>
             <li class="upnav">
                 <a href="#skills">skills</a>
@@ -29,13 +35,15 @@
     <!-- end nav -->
 
     <header>
-        <h1>Hi, I'm Abby</h1>
+        <div class="content">
+            <h1>Hi, I'm Abby</h1>
 
-        <p>web designer and developer ready to jump on a project</p>
+            <p>web designer and developer ready to jump on a project</p>
+        </div>
     </header>
     <!-- end header -->
 
-    <div class="passions">
+    <div class="passions" id="passions">
         <h1>I am passionate ...</h1>
 
         <p class="passion_title">about
@@ -71,7 +79,7 @@
             </button>
             <div class="portfolio-header header-one">
                 <div class="portfolio-title-box">
-                    <h2 class="portfolio-title">Project Name</h2>
+                    <h2 class="portfolio-title">Angular Contacts</h2>
                     <p class="portfolio-subtitle">Subtitle goes here</p>
                 </div>
             </div>
@@ -102,10 +110,18 @@
                 <img class="portfolio-pull-right" src="img/portfolio-01.jpg" alt="an image">
             </div>
         </div>
-        <div class="box2 panel">JS drumkit</div>
-        <div class="box3 panel">Code a Magazine Layout</div>
-        <div class="box4 panel">Weather App</div>
-        <div class="box5 panel">Web Dev Wonderings</div>
+        <div class="box2 panel">
+            <a href="https://abigailloosle.github.io/soundboard/">JS drumkit</a>
+        </div>
+        <div class="box3 panel">
+            <a href="https://abigailloosle.github.io/magazine/">Code a Magazine Layout</a>
+        </div>
+        <div class="box4 panel">
+            <a href="https://abigailloosle.github.io/weather/">Weather App</a>
+        </div>
+        <div class="box5 panel">
+            <a href="https://abigailloosle.github.io/soundboard/">Web Dev Wonderings</a>
+        </div>
         <div class="box6 panel">
             <h2>past projects</h2>
         </div>
@@ -113,7 +129,7 @@
     </div>
     <!-- end projects -->
 
-    <div class="about">
+    <div class="about" id="about">
         <div class="details">
             <h2>You can call me Abby</h2>
             <p>I am drawn to both design and tech, so the web was a natural step for me to being to create.</p>
@@ -139,9 +155,8 @@
                 <li></li>
             </ul>
         </div>
-        <!-- <svg class="icon  icon--plus" viewBox="0 0 5 5" xmlns="http://www.w3.org/2000/svg">
-            <path d="M2 1 h1 v1 h1 v1 h-1 v1 h-1 v-1 h-1 v-1 h1 z" />
-        </svg> -->
+
+        <span>&plus;</span>
 
         <div class="design">
             <h2>Design skills</h2>
@@ -154,6 +169,8 @@
                 <li>Mobile first, always</li>
             </ul>
         </div>
+
+        <span>&equals;</span>
 
         <p>A creative web developer</p>
     </div>

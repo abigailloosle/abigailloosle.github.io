@@ -34,6 +34,8 @@ nav {
         color: black; }
   nav .upbutton {
     margin-top: 10px; }
+  nav .hide {
+    display: none; }
 
 header {
   padding: 5%;
@@ -89,7 +91,23 @@ header {
     border-radius: 20px;
     margin: 5%;
     padding-left: 4%;
-    padding-right: 4%; }
+    padding-right: 4%;
+    /* unvisited link */
+    /* visited link */
+    /* mouse over link */
+    /* selected link */ }
+    .projects .panel a {
+      text-decoration: none; }
+    .projects .panel a:link {
+      color: white; }
+    .projects .panel a:visited {
+      color: green; }
+    .projects .panel a:hover {
+      color: white;
+      text-decoration: underline; }
+    .projects .panel a:active {
+      color: white;
+      text-decoration: none; }
   .projects .box1 {
     background-color: #3a8ca3; }
     .projects .box1:hover {
@@ -245,11 +263,15 @@ header {
   flex-direction: column;
   color: black;
   padding-top: 5%;
+  padding-bottom: 5%;
   text-align: center; }
   .skills p {
     margin: auto;
     width: 200px;
     font-weight: bold; }
+  .skills span {
+    font-weight: bold;
+    font-size: 2em; }
 
 .dev,
 .design {
@@ -257,8 +279,7 @@ header {
   margin: auto;
   border: 2px solid black;
   border-radius: 10px;
-  text-align: center;
-  margin-bottom: 5%; }
+  text-align: center; }
   .dev h2,
   .design h2 {
     font-size: 28px;
@@ -271,10 +292,6 @@ header {
     list-style-type: none;
     padding-top: 2%;
     padding-bottom: 2%; }
-  .dev svg,
-  .design svg {
-    width: 10%;
-    height: auto; }
 
 .dev h2 {
   background-color: #92278f; }
@@ -307,8 +324,7 @@ body {
 
 footer {
   background-color: #229edb;
-  height: 60px;
-  margin-top: 10%;
+  height: 40px;
   padding: 5%; }
   footer button {
     margin: auto;
@@ -318,16 +334,23 @@ footer {
     margin: auto; }
 
 @media (min-width: 768px) {
+  nav img {
+    margin-left: -65%; }
+  nav .hide {
+    display: inline; }
+
   header {
     height: 530px;
     background-size: 850px;
     background-position: right -200px bottom -12px; }
+    header .content {
+      margin-left: 5%; }
     header p {
       width: 400px; }
 
   .passions {
     height: 35%;
-    padding: 5% 5% 5% 5%; }
+    padding: 5% 5% 5% 10%; }
     .passions h1 {
       margin-bottom: 5%; }
     .passions .passion_title {
@@ -360,7 +383,7 @@ footer {
       padding-bottom: 5%;
       width: 600px; }
     .about .details {
-      margin-left: 50%; }
+      margin-left: 39%; }
 
   .projects {
     height: 100%;
