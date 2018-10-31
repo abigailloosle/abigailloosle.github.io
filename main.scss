@@ -3,6 +3,7 @@
 @import "partials/_welcome.scss";
 @import "partials/_passions.scss";
 @import "partials/_projects.scss";
+@import "partials/_skills.scss";
 
 * {
   margin: 0;
@@ -34,51 +35,41 @@ body {
   }
 }
 
-.dev,
-.design {
-  border: 2px solid black;
-  border-radius: 10px;
-  justify-content: center;
-
-  & h2 {
-    padding: 5px;
-    border-radius: 10px;
-  }
-
-  svg {
-    width: 10%;
-  }
-}
-
-.dev h2 {
-  background-color: $a2;
-}
-
-.design h2 {
-  background-color: $a1;
-}
-
 footer {
   background-color: $a1;
   height: 100px;
   margin-top: 10%;
+  padding: 5%;
+
+  button {
+    margin: auto;
+    padding: 8px;
+  }
+
+  .links {
+    display: block;
+    margin: auto;
+  }
 }
 
-@media (min-width: 66.7em) {
+// tablet view
+@media (min-width: 768px) {
   header {
     height: 530px;
     background-size: 850px;
-    background-position: left 500px bottom -12px;
+    background-position: right -200px bottom -12px;
+
+    p {
+      width: 400px;
+    }
   }
 
   .passions {
-    height: 35vh;
-    background-color: $dark;
-    padding: 8% 5% 5% 10%;
-    justify-content: center;
+    height: 50vh;
+    padding: 5% 5% 5% 5%;
 
     h1 {
-      margin-bottom: 10%;
+      margin-bottom: 5%;
     }
 
     .passion_title {
@@ -86,6 +77,76 @@ footer {
 
       & + p {
         margin-bottom: 5%;
+        width: 600px;
+      }
+    }
+  }
+
+  .dev,
+  .design {
+    width: 30%;
+    border-radius: 10px;
+
+    & h2 {
+      padding: 5px;
+      border-radius: 10px;
+      color: white;
+    }
+
+    svg {
+      width: 10%;
+      height: auto;
+    }
+  }
+
+  .about {
+    padding: 5% 5% 5% 5%;
+
+    h2 {
+      font-size: 28px;
+      letter-spacing: 0.05em;
+      margin-bottom: 5%;
+    }
+
+    p {
+      padding-bottom: 5%;
+      width: 600px;
+    }
+
+    .details {
+      margin-left: 40%;
+    }
+  }
+
+  .skills {
+    flex-direction: row;
+
+    & p {
+      font-weight: bold;
+      width: 200px;
+      text-align: center;
+      padding-bottom: 5%;
+    }
+  }
+}
+
+@media (min-width: 1200px) {
+  header {
+    height: 530px;
+    background-size: 950px;
+    background-position: right -100px bottom -12px;
+  }
+
+  .passions {
+    height: 55vh;
+    background-color: $dark;
+    justify-content: center;
+
+    .passion_title {
+      letter-spacing: 0.1em;
+
+      & + p {
+        width: 800px;
       }
     }
   }
