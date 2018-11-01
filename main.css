@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
 button {
   background-color: #e8c547;
@@ -424,3 +425,8 @@ footer {
     height: 250px; } }
 
 /*# sourceMappingURL=main.css.map */
+=======
+* {
+  background-color: #efefef;
+}
+>>>>>>> Stashed changes
