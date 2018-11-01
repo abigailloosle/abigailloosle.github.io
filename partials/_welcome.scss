@@ -1,25 +1,13 @@
-button {
-  background-color: $cot;
-  border: none;
-  color: black;
-  padding: 5px 10px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  margin: 4px 2px;
-  cursor: pointer;
-  border-radius: 16px;
-}
-
 nav {
   display: flex;
-  align-items: flex-start;
   justify-content: center;
   width: 100%;
 
   img {
     width: 80px;
+    height: 70px;
     margin-top: 5px;
+    margin-left: 10px;
   }
 
   .upnav {
@@ -31,6 +19,7 @@ nav {
     flex-direction: row;
     list-style-type: none;
     padding: none;
+    margin-right: 10px;
 
     li {
       cursor: pointer;

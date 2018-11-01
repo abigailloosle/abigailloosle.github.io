@@ -20,6 +20,19 @@ body {
   color: white;
 }
 
+button {
+  background-color: $cot;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+}
+
 .about {
   background-color: $darkg;
   padding: 10% 5% 5% 10%;
@@ -37,26 +50,31 @@ body {
 
 footer {
   background-color: $a1;
-  height: 40px;
-  padding: 5%;
+  height: 80px;
+  padding: 3%;
 
   button {
-    margin: auto;
+    margin: 0;
+    margin-left: 40%;
     padding: 8px;
   }
 
   .links {
     display: block;
-    margin: auto;
+    margin-left: 45%;
+    margin-top: 10px;
+  }
+
+  img {
+    width: 40px;
+    padding: 0 10px 0 0;
   }
 }
 
 // tablet view
 @media (min-width: 768px) {
   nav {
-    img {
-      margin-left: -65%;
-    }
+    justify-content: space-between;
 
     .hide {
       display: inline;
@@ -102,8 +120,6 @@ footer {
 
     & h2 {
       padding: 5px;
-      border-radius: 10px;
-      color: white;
     }
 
     svg {
@@ -155,7 +171,6 @@ footer {
       font-weight: bold;
       width: 200px;
       text-align: center;
-      padding-bottom: 5%;
     }
   }
 }

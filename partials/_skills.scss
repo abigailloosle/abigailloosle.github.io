@@ -5,11 +5,14 @@
   padding-top: 5%;
   padding-bottom: 5%;
   text-align: center;
+  align-items: center;
+  justify-content: center;
 
   p {
     margin: auto;
-    width: 200px;
+    width: 230px;
     font-weight: bold;
+    font-size: 28px;
   }
 
   span {
@@ -22,7 +25,7 @@
 .design {
   width: 80%;
   margin: auto;
-  border: 2px solid black;
+  border: 3px solid black;
   border-radius: 10px;
   text-align: center;
 
@@ -30,7 +33,7 @@
     font-size: 28px;
     letter-spacing: 0.05em;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 7px 7px 0 0;
     color: white;
   }
 
