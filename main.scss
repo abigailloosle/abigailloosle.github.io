@@ -52,18 +52,21 @@ footer {
   background-color: $a1;
   height: 80px;
   padding: 3%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 
   button {
-    margin: 0;
-    margin-left: 40%;
     padding: 8px;
   }
 
   .links {
-    display: block;
-    margin-left: 45%;
-    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
     text-decoration: none;
+    padding-top: 10px;
   }
 
   img {
@@ -162,6 +165,14 @@ footer {
       width: 60px;
       font-size: 28px;
       margin-left: -55px;
+    }
+
+    .box a {
+      width: 60%;
+    }
+
+    .box3 .special-svg {
+      padding-top: 10px;
     }
   }
 

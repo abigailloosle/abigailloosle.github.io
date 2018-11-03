@@ -86,19 +86,51 @@ header {
     margin: 5%;
     padding-left: 4%;
     padding-right: 4%; }
+  .projects .info {
+    display: none; }
+  .projects a:link {
+    color: white; }
+  .projects a:visited {
+    color: black; }
+  .projects a:hover {
+    color: white;
+    text-decoration: underline; }
+  .projects a:active {
+    color: white;
+    text-decoration: none; }
+  .projects .box {
+    display: flex;
+    flex-direction: column; }
+    .projects .box .row {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center; }
+      .projects .box .row img {
+        padding-right: 10px;
+        width: 50px;
+        height: 50px; }
+    .projects .box a {
+      width: 70%;
+      text-align: left; }
+    .projects .box:hover .info {
+      display: block; }
+    .projects .box:hover p {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-decoration: none;
+      text-align: center; }
   .projects .box1 {
-    background-color: #3a8ca3; }
-    .projects .box1:hover {
-      background-color: #347e92;
-      width: 300px; }
-  .projects .box2 {
     background-color: #fe9000; }
-    .projects .box2:hover {
+    .projects .box1:hover {
       background-color: #e48100; }
+  .projects .box2 {
+    background-color: #3a8ca3; }
+    .projects .box2:hover {
+      background-color: #347e92; }
   .projects .box3 {
-    background-color: #274361; }
+    background-color: #97cc04; }
     .projects .box3:hover {
-      background-color: #2a3247; }
+      background-color: #78a303; }
   .projects .box4 {
     background-color: #229edb; }
     .projects .box4:hover {
@@ -110,16 +142,6 @@ header {
   .projects .box6 {
     background-color: #46b2af; }
   .projects a {
-    text-decoration: none; }
-  .projects a:link {
-    color: white; }
-  .projects a:visited {
-    color: black; }
-  .projects a:hover {
-    color: white;
-    text-decoration: underline; }
-  .projects a:active {
-    color: white;
     text-decoration: none; }
 
 .skills {
@@ -204,16 +226,19 @@ button {
 footer {
   background-color: #229edb;
   height: 80px;
-  padding: 3%; }
+  padding: 3%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
   footer button {
-    margin: 0;
-    margin-left: 40%;
     padding: 8px; }
   footer .links {
-    display: block;
-    margin-left: 45%;
-    margin-top: 10px;
-    text-decoration: none; }
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding-top: 10px; }
   footer img {
     width: 40px;
     padding: 0 10px 0 0; }
@@ -279,6 +304,10 @@ footer {
       width: 60px;
       font-size: 28px;
       margin-left: -55px; }
+    .projects .box a {
+      width: 60%; }
+    .projects .box3 .special-svg {
+      padding-top: 10px; }
 
   .skills {
     flex-direction: row; }

@@ -16,48 +16,8 @@
     padding-right: 4%;
   }
 
-  .box1 {
-    background-color: $darkg;
-
-    &:hover {
-      background-color: #347e92;
-      width: 300px;
-    }
-  }
-  .box2 {
-    background-color: $a3;
-
-    &:hover {
-      background-color: #e48100;
-    }
-  }
-  .box3 {
-    background-color: $card;
-
-    &:hover {
-      background-color: #2a3247;
-    }
-  }
-  .box4 {
-    background-color: $a1;
-
-    &:hover {
-      background-color: #1e8ec5;
-    }
-  }
-  .box5 {
-    background-color: $a2;
-
-    &:hover {
-      background-color: #832380;
-    }
-  }
-  .box6 {
-    background-color: $main;
-  }
-
-  a {
-    text-decoration: none;
+  .info {
+    display: none;
   }
 
   /* unvisited link */
@@ -79,6 +39,84 @@
   /* selected link */
   a:active {
     color: white;
+    text-decoration: none;
+  }
+
+  .box {
+    display: flex;
+    flex-direction: column;
+
+    .row {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+
+      img {
+        padding-right: 10px;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    a {
+      width: 70%;
+      text-align: left;
+    }
+
+    &:hover {
+      .info {
+        display: block;
+      }
+
+      p {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        text-decoration: none;
+        text-align: center;
+      }
+    }
+  }
+
+  .box1 {
+    background-color: $a3;
+
+    &:hover {
+      background-color: #e48100;
+    }
+  }
+  .box2 {
+    background-color: $darkg;
+
+    &:hover {
+      background-color: #347e92;
+    }
+  }
+  .box3 {
+    background-color: $a4;
+
+    &:hover {
+      background-color: #78a303;
+    }
+  }
+  .box4 {
+    background-color: $a1;
+
+    &:hover {
+      background-color: #1e8ec5;
+    }
+  }
+  .box5 {
+    background-color: $a2;
+
+    &:hover {
+      background-color: #832380;
+    }
+  }
+  .box6 {
+    background-color: $main;
+  }
+
+  a {
     text-decoration: none;
   }
 }
