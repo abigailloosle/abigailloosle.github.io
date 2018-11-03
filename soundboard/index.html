@@ -7,33 +7,35 @@
     <link rel="stylesheet" href="sound_style.css">
 
     <script type="text/javascript">
-        var audioPaths = {"purple": "sounds/clap.wav",
-                          "green": "sounds/hihat.wav",
-                          "lblue": "sounds/kick.wav",
-                          "red": "sounds/openhat.wav",
-                          "yellow": "sounds/boom.wav",
-                          "black": "sounds/ride.wav",
-                          "blue":"sounds/snare.wav",
-                          "pink": "sounds/tom.wav"}
+        var audioPaths = {
+            "purple": "sounds/clap.wav",
+            "green": "sounds/hihat.wav",
+            "lblue": "sounds/kick.wav",
+            "red": "sounds/openhat.wav",
+            "yellow": "sounds/boom.wav",
+            "black": "sounds/ride.wav",
+            "blue": "sounds/snare.wav",
+            "pink": "sounds/tom.wav"
+        }
         var thePlayer = null
 
-        function setUp(){
+        function setUp() {
             thePlayer = document.querySelector("#sound")
 
-            thePlayer.addEventListener("ended", function() {
+            thePlayer.addEventListener("ended", function () {
                 thePlayer.currentButton.classList.toggle('playing')
 
             }, true)
 
             var theButtons = document.querySelectorAll(".button")
 
-            for(var i = 0; i < theButtons.length; i++){
+            for (var i = 0; i < theButtons.length; i++) {
                 var aButton = theButtons[i]
-                aButton.addEventListener("touchstart", function(){
+                aButton.addEventListener("touchstart", function () {
                     // turn off all buttons with class of playing
                     var playingButtons = document.querySelectorAll('.playing')
                     var numPlaying = playingButtons.length
-                    for (var i = 0; i < numPlaying; i++){
+                    for (var i = 0; i < numPlaying; i++) {
                         playingButtons[i].classList.toggle('playing')
                     }
 
@@ -51,6 +53,22 @@
                 });
             }
         }
+
+        function removeTransition(e) {
+            if (e.propertyName !== 'transform') return;
+            e.target.classList.remove('playing');
+        }
+        function playSound(e) {
+            const audio = document.querySelector(`audio[data-key="${e.keyCode}"]`);
+            const key = document.querySelector(`div[data-key="${e.keyCode}"]`);
+            if (!audio) return;
+            key.classList.add('playing');
+            audio.currentTime = 0;
+            audio.play();
+        }
+        const keys = Array.from(document.querySelectorAll('.key'));
+        keys.forEach(key => key.addEventListener('transitionend', removeTransition));
+        window.addEventListener('keydown', playSound);
 
     </script>
 </head>

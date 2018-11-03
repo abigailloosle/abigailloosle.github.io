@@ -89,7 +89,8 @@ header {
   .projects .box1 {
     background-color: #3a8ca3; }
     .projects .box1:hover {
-      background-color: #347e92; }
+      background-color: #347e92;
+      width: 300px; }
   .projects .box2 {
     background-color: #fe9000; }
     .projects .box2:hover {
@@ -211,7 +212,8 @@ footer {
   footer .links {
     display: block;
     margin-left: 45%;
-    margin-top: 10px; }
+    margin-top: 10px;
+    text-decoration: none; }
   footer img {
     width: 40px;
     padding: 0 10px 0 0; }
