@@ -1,13 +1,12 @@
-# Hi There! I'm Abby
+# So, a mobile app?
 
-Here is where I keep code I am ok sharing with the public! I both some projects and also have a little about me. Want something
-more tangible? Have you seen my [portfolio](http://abigailloosle.github.io)?
+The whole purpose of this [site](https://abigailloosle.github.io/soundboard/) was to build a mobile application that was built according to the best
 
-### A Little About Me
+## A Little About Me
 
 I am currently a senior studying Web Design and Development, with an emphasis on Development. I love being able to bring a design to life through responsive code. I am passionate that powerful code must be backed up with strong design.
 
-## How I Design
+### How I Design
 
 Some of my main tools include Adobe XD to wireframe and plan sites. I often use Adobe Illustrator to design, format, and create icons and any SVG content I might need to accomplish my page!
 
@@ -29,6 +28,6 @@ One of the strengths of SASS is in Mixins. These are powerful ways to make a sit
 
 Every browser has their quirks and I find it incredibly important to have tested the site on as many as possible, so I can better understand my visitor's experience.
 
-## Then I Share It
+### Then I Share It
 
 This is a vital step in the process to get feedback on different individual's experiences. And as neccessary, make improvements!
