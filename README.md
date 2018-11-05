@@ -21,7 +21,7 @@ Everyone has their own way of doing things. Here is a bit about my process.
 
 With wireframe, and images in hand, I find that some of the most important things to do is set up the environment. I prefer coding in VS Code and using SASS, because together I can code with flexibility.
 
-Another huge aspect to coding is the architecture that the code is made with. I use a mix of the Block Element Modifier [(BEM)](http://getbem.com/) and Multilayer CSS [(MCSS)](https://operatino.github.io/MCSS/en/). Mainly, I aim to keep my code
+Another huge aspect to coding is the architecture that the code is made with. I use a mix of the Block Element Modifier [(BEM)](http://getbem.com/) and Multilayer CSS [(MCSS)](https://operatino.github.io/MCSS/en/). Mainly, I aim to keep my code reusable, maintainable, and scalable.
 
 ### Test in different browsers
 
