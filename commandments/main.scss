@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+@import 'variable';
+@import 'ten';
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav {
+    float: right;
+}
+
+
+header {
+    background-color: $bg;
+    padding: 3em 2em;
+}
+
+.author {
+    height: 100vh;
+    padding: 2em 1em;
+
+    &p {
+        padding-bottom: 1em;
+    }
+
+}
+
+.subhead {
+    font-size: .7em;
+    padding-bottom: 2em;
+}
+
+.ideas {
+    background-color: $bg;
+    padding: 2em;
+    padding-bottom: 2em;
+
+    .card {
+        margin: 3em 0;
+        padding: 2em 2em;
+        border-radius: 20px;
+        
+        & h3 {
+            padding-bottom: 1em;
+        }
+
+        & p {
+            margin-bottom: 1em;
+        }
+
+        & a {
+            color: black;
+            text-decoration: none;
+            padding: .5em;
+            border-radius: 5px;
+            margin-top: 1em;
+        }
+    }
+
+    #tenmain {
+        background-color: $a1;
+
+        & a {
+            background-color: $a3;
+        }
+    }
+
+    #designmain {
+        background-color: $a2;
+
+        & a {
+            background-color: $a1;
+        }
+    }
+
+    #createmain {
+        background-color: $a3;
+
+        & a {
+            background-color: $a2;
+        }
+    }
+}
+
+footer {
+    background-color: $dark;
+    color: white;
+    text-align: center;
+    padding: 2em 0;
+}
