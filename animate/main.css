@@ -1,23 +1,146 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - main.sass
+html,
+body {
+    height: 100%;
+}
 
-Backtrace:
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `read'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:294:in `watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin.rb:109:in `method_missing'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:22:in `load'
-/usr/local/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - main.sass"; }
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(17, 37, 52);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container {
+    height: 20vmin;
+    width: 20vmin;
+    background-color: teal;
+}
+
+.container-one {
+    padding: 1vmin;
+}
+
+.orbiting-circle {
+    height: 25%;
+    width: 25%;
+    background-color: darkred;
+    border-radius: 50%;
+    animation: orbit 3s linear infinite;
+}
+
+@keyframes orbit {
+    0% { transform: translate(0,0); }
+    5% { transform: translate(0,0); } /* don't change for 5% of the time...pause */
+    25% { transform: translate(300%,0%); } /* start moving again */
+    30% { transform: translate(300%,0%); } /* pause */
+    50% { transform: translate(300%,300%); } /* move */
+    55% { transform: translate(300%,300%); }
+    75% { transform: translate(0%,300%); }
+    80% { transform: translate(0%,300%); }
+    100% { transform: translate(0%,0%); }
+}
+
+.container-two, .container-three, .container-four {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.morphing-circle {
+    height: 25%;
+    width: 25%;
+    background-color:darkred;	
+    border-radius: 50%;
+    transition: border-radius .5s ease, 
+                background-color .5s ease, 
+                transform .5s ease .5s;
+    animation: morphing-circle-square 3s linear infinite;
+}
+.container-two:hover .morphing-circle {
+    border-radius: 0;
+    background-color:  white;
+    transform: rotate(90deg);
+}
+
+@keyframes morphing-circle-square {
+    0% {border-radius: 50%}
+    25% { /*(if you don't add both red and circle here it will start changing one or the other before you are ready) */
+        border-radius: 50%;
+        background-color: darkred;
+    }
+    50% { /* now change to white square...but don't start rotating yet! */
+        border-radius: 0%;
+        background-color: white;
+        transform: rotate(0deg);
+    }
+    75% { /* stay a white square, but rotate 90deg */
+        border-radius: 0%;
+        background-color: white;
+        transform: rotate(90deg);   
+    }
+    100% { /* stay rotated at 90, but change back to a circle */
+        border-radius: 50%;
+        background-color: darkred;
+        transform: rotate(90deg);
+    }
+}
+
+.left {
+  background-color: darkred;
+  height: 40px;
+  width: 20px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 40px;
+  animation: seperate-left 3s infinite;
+}
+
+@keyframes seperate-left {
+    0% { transform: translate(0px); }
+  
+    50% { transform: translate(-10px); }
+  
+    100% { transform: translate(0px); }
+}
+
+.right {
+  background-color: darkred;
+  height: 40px;
+  width: 20px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 40px;
+  animation: seperate-right 3s infinite;
+}
+
+@keyframes seperate-right {
+    0% { transform: translate(0px); }
+  
+    50% { transform: translate(10px); }
+  
+    80% { transform: translate(0px); }
+}
+
+.pulsing-circle {
+    height: 25%;
+    width: 25%;
+    background-color:darkred;	
+    border-radius: 50%;
+    animation: beat 4s infinite;
+}
+
+@keyframes beat {
+    0% { transform: scale(1); }
+  40% { transform: scale(1); } /* before */
+      45% { transform: scale(1.3); }
+    50% { transform: scale(1); } /* after */
+  
+  70% { transform: scale(1); } /* before */
+      75% { transform: scale(1.3); }
+    80% { transform: scale(1); } /* after */
+  
+  85% { transform: scale(1); } /* before */
+      90% {transform: scale(1.3);}
+    95% { transform: scale(1); }/* after */
+}
