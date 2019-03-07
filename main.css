@@ -239,6 +239,9 @@ footer {
     flex-direction: row;
     text-decoration: none;
     padding-top: 10px; }
+    footer .links .fab {
+      font-size: 1.5em;
+      padding-left: 10px; }
   footer img {
     width: 40px;
     padding: 0 10px 0 0; }

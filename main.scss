@@ -67,6 +67,11 @@ footer {
     flex-direction: row;
     text-decoration: none;
     padding-top: 10px;
+
+    .fab {
+      font-size: 1.5em;
+      padding-left: 10px;
+    }
   }
 
   img {
