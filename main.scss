@@ -98,8 +98,12 @@ footer {
     background-size: 850px;
     background-position: right -200px bottom -12px;
 
-    .content {
+    .hero {
       margin-left: 5%;
+
+      .button {
+        margin-top: 10px;
+      }
     }
 
     p {

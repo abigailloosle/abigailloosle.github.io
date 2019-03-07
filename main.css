@@ -262,8 +262,10 @@ footer {
     height: 530px;
     background-size: 850px;
     background-position: right -200px bottom -12px; }
-    header .content {
+    header .hero {
       margin-left: 5%; }
+      header .hero .button {
+        margin-top: 10px; }
     header p {
       width: 400px; }
 
