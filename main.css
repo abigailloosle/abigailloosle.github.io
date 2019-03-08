@@ -141,16 +141,6 @@ header {
   justify-content: center;
   align-items: center;
   margin: 0 auto; }
-  .box .center {
-    display: flex;
-    flex-flow: row;
-    width: 150px; }
-    .box .center h2 {
-      width: 10px; }
-    .box .center img {
-      padding-right: 10px;
-      width: 50px;
-      height: 50px; }
   .box a {
     width: 70%;
     text-align: left; }
@@ -161,6 +151,17 @@ header {
     padding-bottom: 10px;
     text-decoration: none;
     text-align: center; }
+
+.center {
+  display: flex;
+  flex-flow: row;
+  width: 150px; }
+  .center h2 {
+    width: 10px; }
+  .center img {
+    padding-right: 10px;
+    width: 50px;
+    height: 50px; }
 
 .backwards .prog-about {
   padding-top: 20px;

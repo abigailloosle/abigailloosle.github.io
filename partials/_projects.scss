@@ -69,22 +69,6 @@
   align-items: center;
   margin: 0 auto;
 
-  .center {
-    display: flex;
-    flex-flow: row;
-    width: 150px;
-
-    h2 {
-      width: 10px;
-    }
-
-    img {
-      padding-right: 10px;
-      width: 50px;
-      height: 50px;
-    }
-  }
-
   a {
     width: 70%;
     text-align: left;
@@ -103,6 +87,22 @@
     }
   }
 }
+
+.center {
+    display: flex;
+    flex-flow: row;
+    width: 150px;
+
+    h2 {
+      width: 10px;
+    }
+
+    img {
+      padding-right: 10px;
+      width: 50px;
+      height: 50px;
+    }
+  }
 
 .backwards .prog-about {
   padding-top: 20px;
