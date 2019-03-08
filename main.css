@@ -175,7 +175,7 @@ header {
   flex-direction: row wrap; }
 
 .pill {
-  background: #fe9000;
+  background: #bbbbbb;
   white-space: nowrap;
   border-radius: 15px;
   font-size: 1em;
@@ -197,22 +197,50 @@ header {
   background-position: center; }
 
 .box3 {
-  background-color: #97cc04; }
+  background-color: #97cc04;
+  background-image: url(img/shop-grab.png);
+  background-position: center; }
 
 .box4 {
-  background-color: #229edb; }
+  background-color: #229edb;
+  background-image: url(img/movie-grab.png);
+  background-position: center; }
 
 .box5 {
-  background-color: #92278f; }
-
-.box6 {
-  background-color: #46b2af; }
+  background-color: #92278f;
+  background-image: url(img/ani-grab.png);
+  background-position: center; }
 
 a {
   text-decoration: none; }
 
 .see {
   float: right; }
+
+.explain:nth-of-type(1) .pill {
+  background: #e8c547; }
+.explain:nth-of-type(1) .button {
+  border-color: #e8c547; }
+
+.explain:nth-of-type(2) .pill {
+  background: #fe9000; }
+.explain:nth-of-type(2) .button {
+  border-color: #fe9000; }
+
+.explain:nth-of-type(3) .pill {
+  background: #97cc04; }
+.explain:nth-of-type(3) .button {
+  border-color: #97cc04; }
+
+.explain:nth-of-type(5) .pill {
+  background: #229edb; }
+.explain:nth-of-type(5) .button {
+  border-color: #229edb; }
+
+.explain:nth-of-type(4) .pill {
+  background: #92278f; }
+.explain:nth-of-type(4) .button {
+  border-color: #92278f; }
 
 .skills {
   display: flex;
@@ -315,7 +343,7 @@ footer {
     width: 40px;
     padding: 0 10px 0 0; }
 
-.hero .button, footer .button {
+.hero .button, footer .button, .proj .button {
   margin-top: 20px;
   margin-left: 0;
   background-color: transparent;
@@ -438,7 +466,7 @@ footer {
       width: 200px;
       text-align: center; }
 
-  .hero .button, footer .button {
+  .hero .button, footer .button, .proj .button {
     margin-top: 22px;
     margin-left: 2px;
     background-color: transparent;
@@ -446,7 +474,7 @@ footer {
     color: #00000078;
     transition: .1s; }
 
-  .hero .button:hover, footer .button:hover {
+  .hero .button:hover, footer .button:hover, .proj .button:hover {
     margin-top: 20px;
     margin-left: 0;
     background-color: transparent;

@@ -119,7 +119,7 @@
   flex-direction: row wrap;
 }
 .pill {
-  background: $a3;
+  background: #bbbbbb;
   white-space: nowrap;
   border-radius: 15px;
   font-size: 1em;
@@ -140,22 +140,21 @@
   background-color: $darkg;
   background-image: url(img/js-grab.png);
   background-position: center; 
-
 }
 .box3 {
   background-color: $a4;
-
+  background-image: url(img/shop-grab.png);
+  background-position: center; 
 }
 .box4 {
   background-color: $a1;
-
+  background-image: url(img/movie-grab.png);
+  background-position: center; 
 }
 .box5 {
   background-color: $a2;
-
-}
-.box6 {
-  background-color: $main;
+  background-image: url(img/ani-grab.png);
+  background-position: center; 
 }
 
 a {
@@ -164,4 +163,49 @@ a {
 
 .see {
   float: right;
+}
+
+.explain:nth-of-type(1){
+  .pill {
+    background: $cot;
+  }
+  .button {
+    border-color: $cot;
+  }
+}
+
+.explain:nth-of-type(2){
+  .pill {
+    background: $a3;
+  }
+  .button {
+    border-color: $a3;
+  }
+}
+
+.explain:nth-of-type(3) {
+  .pill {
+    background: $a4;
+  }
+  .button {
+    border-color: $a4;
+  }
+}
+
+.explain:nth-of-type(5) {
+  .pill {
+    background: $a1;
+  }
+  .button {
+    border-color: $a1;
+  }
+}
+
+.explain:nth-of-type(4) {
+  .pill {
+    background: $a2;
+  }
+  .button {
+    border-color: $a2;
+  }
 }

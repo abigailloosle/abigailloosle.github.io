@@ -79,7 +79,7 @@ footer {
   }
 }
 
-.hero .button, footer .button {
+.hero .button, footer .button, .proj .button {
   margin-top: 20px;
   margin-left: 0;
   background-color: transparent;
@@ -268,7 +268,7 @@ footer {
     }
   }
 
-  .hero .button, footer .button {
+  .hero .button, footer .button, .proj .button {
     margin-top: 22px;
     margin-left: 2px;
     background-color: transparent;
@@ -277,7 +277,7 @@ footer {
     transition: .1s;
   }
 
-  .hero .button:hover, footer .button:hover {
+  .hero .button:hover, footer .button:hover, .proj .button:hover {
     margin-top: 20px;
     margin-left: 0;
     background-color: transparent;
