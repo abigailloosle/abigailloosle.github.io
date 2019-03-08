@@ -17,13 +17,36 @@ nav {
     padding: none;
     margin-right: 10px; }
     nav ul li {
-      cursor: pointer; }
+      cursor: pointer;
+      display: inline-block;
+      position: relative; }
       nav ul li a {
         text-decoration: none;
         padding: 15px;
         color: black; }
+      nav ul li .nav-hover:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        background: #000000;
+        transition: width 5s;
+        -webkit-transition: width 5s; }
+      nav ul li .nav-hover:hover:after {
+        width: 100%;
+        background: #000000; }
   nav .upbutton {
     margin-top: 10px; }
+  nav .pulse:hover {
+    animation: pulse 1s; }
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    transform: scale3d(1, 1, 1); } }
   nav .hide {
     display: none; }
 
@@ -46,12 +69,12 @@ header {
     margin: auto 10% 0 auto; }
 
 .passions {
-  height: 90vh;
+  height: 70vh;
   background-color: #131c33;
   color: white;
   padding: 25% 5% 5% 10%;
   justify-content: center; }
-  .passions h1 {
+  .passions h2 {
     font-size: 28px;
     letter-spacing: 0.05em;
     margin-bottom: 20%; }
@@ -76,16 +99,6 @@ header {
   /* visited link */
   /* mouse over link */
   /* selected link */ }
-  .projects .panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
-    padding-left: 4%;
-    padding-right: 4%; }
   .projects .info {
     display: none; }
   .projects a:link {
@@ -98,51 +111,108 @@ header {
   .projects a:active {
     color: white;
     text-decoration: none; }
-  .projects .box {
+
+.proj {
+  color: #131c33; }
+  .proj .head {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    margin-left: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%; }
+
+.explain {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 10%; }
+
+.panel {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  padding-left: 4%;
+  padding-right: 4%; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; }
+  .box .center {
     display: flex;
-    flex-direction: column; }
-    .projects .box .row {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center; }
-      .projects .box .row img {
-        padding-right: 10px;
-        width: 50px;
-        height: 50px; }
-    .projects .box a {
-      width: 70%;
-      text-align: left; }
-    .projects .box:hover .info {
-      display: block; }
-    .projects .box:hover p {
-      padding-top: 10px;
-      padding-bottom: 10px;
-      text-decoration: none;
-      text-align: center; }
-  .projects .box1 {
-    background-color: #fe9000; }
-    .projects .box1:hover {
-      background-color: #e48100; }
-  .projects .box2 {
-    background-color: #3a8ca3; }
-    .projects .box2:hover {
-      background-color: #347e92; }
-  .projects .box3 {
-    background-color: #97cc04; }
-    .projects .box3:hover {
-      background-color: #78a303; }
-  .projects .box4 {
-    background-color: #229edb; }
-    .projects .box4:hover {
-      background-color: #1e8ec5; }
-  .projects .box5 {
-    background-color: #92278f; }
-    .projects .box5:hover {
-      background-color: #832380; }
-  .projects .box6 {
-    background-color: #46b2af; }
-  .projects a {
-    text-decoration: none; }
+    flex-flow: row;
+    width: 150px; }
+    .box .center h2 {
+      width: 10px; }
+    .box .center img {
+      padding-right: 10px;
+      width: 50px;
+      height: 50px; }
+  .box a {
+    width: 70%;
+    text-align: left; }
+  .box:hover .info {
+    display: block; }
+  .box:hover p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    text-align: center; }
+
+.backwards .prog-about {
+  padding-top: 20px;
+  padding-right: 5%; }
+
+.forward .prog-about {
+  padding-top: 20px;
+  padding-left: 5%; }
+
+.lang {
+  display: flex;
+  flex-direction: row wrap; }
+
+.pill {
+  background: #fe9000;
+  white-space: nowrap;
+  border-radius: 15px;
+  font-size: 1em;
+  padding: 5px 8px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.side {
+  margin-right: 10px; }
+
+.box1 {
+  background-color: #fe9000;
+  background-image: url(img/angular-grab.png);
+  background-position: center; }
+
+.box2 {
+  background-color: #3a8ca3;
+  background-image: url(img/js-grab.png);
+  background-position: center; }
+
+.box3 {
+  background-color: #97cc04; }
+
+.box4 {
+  background-color: #229edb; }
+
+.box5 {
+  background-color: #92278f; }
+
+.box6 {
+  background-color: #46b2af; }
+
+a {
+  text-decoration: none; }
+
+.see {
+  float: right; }
 
 .skills {
   display: flex;
@@ -225,7 +295,6 @@ body {
 
 footer {
   background-color: #229edb;
-  height: 80px;
   padding: 3%;
   display: flex;
   flex-flow: column nowrap;
@@ -246,11 +315,32 @@ footer {
     width: 40px;
     padding: 0 10px 0 0; }
 
-.grow {
-  transition: all .2s ease-in-out; }
+.hero .button, footer .button {
+  margin-top: 20px;
+  margin-left: 0;
+  background-color: transparent;
+  border: 4px #e8c547 solid;
+  color: black; }
 
-.grow:hover {
-  transform: scale(1.5); }
+.hero .button {
+  margin-top: 250px; }
+
+.hobbies {
+  margin: 30px 20px;
+  padding: 30px;
+  background-color: white;
+  color: #131c33; }
+  .hobbies p {
+    padding-bottom: 10px; }
+  .hobbies .row {
+    display: flex; }
+  .hobbies .hobby-intro {
+    flex-direction: column; }
+    .hobbies .hobby-intro .my-code {
+      width: 100%;
+      padding-bottom: 30px; }
+  .hobbies .center-block {
+    text-align: center; }
 
 @media (min-width: 768px) {
   nav {
@@ -264,21 +354,42 @@ footer {
     background-position: right -200px bottom -12px; }
     header .hero {
       margin-left: 5%; }
-      header .hero .button {
-        margin-top: 10px; }
     header p {
       width: 400px; }
 
   .passions {
     height: 35%;
     padding: 5% 5% 5% 10%; }
-    .passions h1 {
+    .passions h2 {
       margin-bottom: 5%; }
     .passions .passion_title {
       letter-spacing: 0.1em; }
       .passions .passion_title + p {
         margin-bottom: 5%;
         width: 600px; }
+
+  .hobbies {
+    padding: 7%; }
+    .hobbies p {
+      padding-top: 2%; }
+    .hobbies .hobby-intro {
+      display: flex;
+      flex-direction: row; }
+      .hobbies .hobby-intro .about-info {
+        padding-right: 5%; }
+      .hobbies .hobby-intro .my-code {
+        width: 100%;
+        padding-bottom: 30px; }
+    .hobbies .hobby-icons {
+      display: flex;
+      flex-flow: row wrap;
+      width: 70%;
+      margin-top: -15%; }
+      .hobbies .hobby-icons .center-block {
+        width: 30%;
+        margin-top: 5%; }
+      .hobbies .hobby-icons .left {
+        margin-right: 10%; }
 
   .dev,
   .design {
@@ -325,7 +436,27 @@ footer {
     .skills p {
       font-weight: bold;
       width: 200px;
-      text-align: center; } }
+      text-align: center; }
+
+  .hero .button, footer .button {
+    margin-top: 22px;
+    margin-left: 2px;
+    background-color: transparent;
+    border: 2px #00000078 solid;
+    color: #00000078;
+    transition: .1s; }
+
+  .hero .button:hover, footer .button:hover {
+    margin-top: 20px;
+    margin-left: 0;
+    background-color: transparent;
+    border: 4px #e8c547 solid;
+    color: black; }
+
+  .proj .explain {
+    flex-direction: row; }
+  .proj .backwards {
+    flex-flow: row-reverse; } }
 @media (min-width: 1200px) {
   header {
     height: 500px;

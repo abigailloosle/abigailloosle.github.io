@@ -18,32 +18,32 @@
 <body>
     <!-- Oh, hello there! -->
     <!-- So you've come to peek at my code? -->
-
-    
     <nav>
         <img src="img/logo.png" alt="Logo for Abby Loosley Web Developer" class="img-stuck">
         <ul>
-            <li class="upnav hid">
-                <a href="#passions">passions</a>
+            <li class="upnav hide">
+                <a href="#passions" class="nav-hover">passions</a>
             </li>
             <li class="upnav bump">
-                <a href="#projects">projects</a>
+                <a href="#projects" class="nav-hover">projects</a>
             </li>
             <li class="upnav hide">
-                <a href="#about">about</a>
+                <a href="#about" class="nav-hover">about</a>
             </li>
             <li class="upnav">
-                <a href="#skills">skills</a>
+                <a href="#skills" class="nav-hover">skills</a>
             </li>
             <li>
-                <a href="mailto:abigail.loosle@gmail.com?Subject=Hi Abby" title="send me an email" class="button upbutton">contact</a>
+                <a href="mailto:abigail.loosle@gmail.com?Subject=Hi Abby" title="send me an email" class="button upbutton pulse">contact</a>
             </li>
         </ul>
     </nav>
     <!-- end nav -->
 
+    <!-- That's just fine, have a look around! -->
     <header>
         <div class="hero">
+            <!-- There's a picture of me here in the background, it's nice to meet you -->
             <h1>Hi, I'm Abby</h1>
 
             <p>web designer and developer ready to jump on a project</p>
@@ -52,8 +52,10 @@
     </header>
     <!-- end header -->
 
+    <!-- Coding and developing have become a big part of my life -->
+    <!-- Sometimes, I realize I'd rather be coding than doing some of the other things in life! -->
     <div class="passions" id="passions">
-        <h1>I am passionate ...</h1>
+        <h2>I am passionate ...</h2>
 
         <p class="passion_title">about
             <span id="oj" class="grow">code and design</span>
@@ -73,48 +75,8 @@
     </div>
     <!-- end passions -->
 
-    <!-- These are some of my projects that I've worked on -->
-    <div class="projects" id="projects">
-        <div class="box box1 panel" href="https://github.com/abigailloosle/Angular-Contacts">
-            <div class="row">
-                <img src="img/angular.svg" alt="Icon for Angular">
-                <a href="https://github.com/abigailloosle/Angular-Contacts">Angular Contacts</a>
-            </div>
-            <div class="info">
-                <p href="https://github.com/abigailloosle/Angular-Contacts">An app built with Angular to organize contacts</p>
-            </div>
-        </div>
 
-        <div class="box box2 panel">
-            <div class="row">
-                <img src="img/js.svg" alt="Icon for JavaScript">
-                <a href="https://abigailloosle.github.io/cities/">JS Cities</a>
-            </div>
-            <div class="info">
-                <p>Using an API, and a search field, see cities and their populations</p>
-            </div>
-        </div>
-
-        <div class="box box3 panel">
-            <div class="row">
-                <img src="img/grid.svg" alt="Icon for CSS Grid" class="special-svg">
-                <a href="https://vast-reaches-29790.herokuapp.com/shopping">Code a Shopping page</a>
-            </div>
-            <div class="info">
-                <p>Straightforward shopping page powered by PHP</p>
-            </div>
-        </div>
-
-        <div class="box box4 panel">
-            <div class="row">
-                <img src="img/json.svg" alt="Icon for JSON">
-                <a href="https://vast-reaches-29790.herokuapp.com/movie/home.php">Movie Database</a>
-            </div>
-            <div class="info">
-                <p>PostgreSQL and PHP run this site. To log in, use username guest and password 1234qweR!</p>
-            </div>
-        </div>
-
+    <!-- <div class="projects" id="projects">
         <div class="box box5 panel">
             <div class="row">
                 <img src="img/responsive.svg" alt="Icon for the Responsive web">
@@ -128,6 +90,150 @@
             <h2>past projects</h2>
         </div>
 
+    </div> -->
+    <div class="hobbies">
+        <div class="hobby-intro">
+            <div class="about-info">
+                <p>I enjoy building responsive stuff for the web, making people smile, baking cookies, and SASS.</p>
+                <p>I code smarter, not harder.</p>
+            </div>
+            <div class="fit-gif">
+                <img src="img/code.gif" alt="I love to code" title="Dark theme all the way" class="my-code">
+            </div>
+        </div>
+
+        <div class="hobby-icons">
+            <div class="center-block left">
+                <span class="fas fa-plane-departure"></span>
+                <p>I love to travel</p>
+            </div>
+            <div class="center-block">
+                <span class="fas fa-film"></span>
+                <p>I watch lots of movies</p>
+            </div>
+            <div class="center-block left">
+                <span class="fas fa-grin-beam"></span>
+                <p>I am a happy person</p>
+            </div>
+            <div class="center-block">
+                <span class="fas fa-umbrella-beach"></span>
+                <p>I like the beach</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- These are some of my projects that I've worked on -->
+    <!-- I am proud of these, and am happy to talk to you more about them! -->
+    <div class="proj" id="projects">
+        <h2 class="head">Some past projects</h2>
+        <!-- Javascript project -->
+        <!-- This was one of my first Javascript deep dives -->
+        <div class="explain forward">
+            <div class="box box2 panel">
+                <div class="center">
+                    <img src="img/js.svg" alt="Icon for JavaScript">
+                    <a href="https://abigailloosle.github.io/cities/"><h2>JS Cities</h2></a>
+                </div>
+            </div>
+            <div class="prog-about">
+                <div class="lang">
+                    <div class="pill side">JavaScript</div>
+                    <div class="pill">API</div>
+                </div>
+                <p>Using an API, and a search field, see cities and their populations.</p>
+                <a href="https://github.com/abigailloosle/Angular-Contacts" class="see">See it live</a>
+            </div>
+        </div>
+
+        <!-- Angular project -->
+        <!-- This project took a significant amount of time, and I'm really proud of it! -->
+        <div class="explain backwards">
+            <a href="https://github.com/abigailloosle/Angular-Contacts">
+                <div class="box box1 panel">
+                    <div class="center">
+                        <img src="img/angular.svg" alt="Icon for Angular">
+                        <a href="https://github.com/abigailloosle/Angular-Contacts">
+                            <h2>Angular Contacts</h2>
+                        </a>
+                    </div>
+                </div>
+            </a>
+            <div class="prog-about">
+                <div class="lang">
+                    <div class="pill side">Angular 4</div>
+                    <div class="pill side">Bootstrap</div>
+                    <div class="pill">TypeScript</div>
+                </div>
+                <p>This web app creates, edits, and delets contacts. It also has drag/drop features to group contacts.</p>
+                <p>While I currently haven't uploaded this content onto the web, the project is available here. I built this modular
+                    app with a team.</p>
+
+            <a href="https://github.com/abigailloosle/Angular-Contacts" class="see">See the code</a>
+            </div>
+        </div>
+
+        <!-- PHP Shopping project -->
+        <!-- ! -->
+        <div class="explain forward">
+            <a href="https://github.com/abigailloosle/Angular-Contacts">
+                <div class="box box3 panel">
+                    <div class="center">
+                        <img src="img/grid.svg" alt="Icon for CSS Grid" class="special-svg">
+                        <a href="https://vast-reaches-29790.herokuapp.com/shopping"><h2>Shopping page</h2></a>
+                    </div>
+                </div>
+            </a>
+            <div class="prog-about">
+                <div class="lang">
+                    <div class="pill side">PHP</div>
+                    <div class="pill side">mySQL</div>
+                    <div class="pill">Bootstrap</div>
+                </div>
+                <p>Straightforward shopping page powered by PHP</p>
+                <a href="https://vast-reaches-29790.herokuapp.com/shopping" class="see">See the code</a>
+            </div>
+        </div>
+
+        <!-- PHP Movie project -->
+        <!-- ! -->
+        <div class="explain backwards">
+            <div class="box box4 panel">
+                <div class="center">
+                    <img src="img/json.svg" alt="Icon for JSON">
+                    <a href="https://vast-reaches-29790.herokuapp.com/movie/home.php"><h2>Movie Database</h2></a>
+                </div>
+            </div>
+            <div class="prog-about">
+                <div class="lang">
+                    <div class="pill side">PHP</div>
+                    <div class="pill side">mySQL</div>
+                    <div class="pill">Bootstrap</div>
+                </div>
+                <p>PostgreSQL and PHP run this site. To log in, use username guest and password 1234qweR!</p>
+                <a href="https://vast-reaches-29790.herokuapp.com/movie/home.php" class="see">See the code</a>
+            </div>
+            
+        </div>
+
+        <!-- Animation project -->
+        <!-- ! -->
+        <div class="explain forward">
+            <div class="box box5 panel">
+                <div class="center">
+                    <img src="img/responsive.svg" alt="Icon for the Responsive web">
+                    <a href="https://abigailloosle.github.io/animate/"><h2>Animate Challenge</h2></a>
+                </div>
+            </div>
+            <div class="prog-about">
+                <div class="lang">
+                    <div class="pill side">SASS</div>
+                    <div class="pill side">HTML</div>
+                </div>
+                <p>Straightforward shopping page powered by PHP</p>
+                <a href="https://vast-reaches-29790.herokuapp.com/shopping" class="see">See the code</a>
+            </div>
+        </div>
     </div>
     <!-- end projects -->
 

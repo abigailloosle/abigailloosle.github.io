@@ -4,18 +4,6 @@
   flex-flow: row wrap;
   justify-content: center;
 
-  .panel {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100px;
-    height: 130px;
-    border-radius: 20px;
-    margin: 5%;
-    padding-left: 4%;
-    padding-right: 4%;
-  }
-
   .info {
     display: none;
   }
@@ -41,82 +29,139 @@
     color: white;
     text-decoration: none;
   }
+}
 
-  .box {
+
+.proj {
+  color: $dark;
+
+  .head {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    margin-left: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+}
+
+.explain {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 10%;
+}
+
+
+
+.panel {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+
+  .center {
     display: flex;
-    flex-direction: column;
+    flex-flow: row;
+    width: 150px;
 
-    .row {
-      display: flex;
-      flex-flow: row wrap;
-      justify-content: center;
-
-      img {
-        padding-right: 10px;
-        width: 50px;
-        height: 50px;
-      }
+    h2 {
+      width: 10px;
     }
 
-    a {
-      width: 70%;
-      text-align: left;
+    img {
+      padding-right: 10px;
+      width: 50px;
+      height: 50px;
     }
-
-    &:hover {
-      .info {
-        display: block;
-      }
-
-      p {
-        padding-top: 10px;
-        padding-bottom: 10px;
-        text-decoration: none;
-        text-align: center;
-      }
-    }
-  }
-
-  .box1 {
-    background-color: $a3;
-
-    &:hover {
-      background-color: #e48100;
-    }
-  }
-  .box2 {
-    background-color: $darkg;
-
-    &:hover {
-      background-color: #347e92;
-    }
-  }
-  .box3 {
-    background-color: $a4;
-
-    &:hover {
-      background-color: #78a303;
-    }
-  }
-  .box4 {
-    background-color: $a1;
-
-    &:hover {
-      background-color: #1e8ec5;
-    }
-  }
-  .box5 {
-    background-color: $a2;
-
-    &:hover {
-      background-color: #832380;
-    }
-  }
-  .box6 {
-    background-color: $main;
   }
 
   a {
-    text-decoration: none;
+    width: 70%;
+    text-align: left;
   }
+
+  &:hover {
+    .info {
+      display: block;
+    }
+
+    p {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      text-decoration: none;
+      text-align: center;
+    }
+  }
+}
+
+.backwards .prog-about {
+  padding-top: 20px;
+  padding-right: 5%;
+}
+
+.forward .prog-about {
+  padding-top: 20px;
+  padding-left: 5%;
+}
+
+.lang {
+  display: flex;
+  flex-direction: row wrap;
+}
+.pill {
+  background: $a3;
+  white-space: nowrap;
+  border-radius: 15px;
+  font-size: 1em;
+  padding: 5px 8px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.side {
+  margin-right: 10px;
+}
+
+.box1 {
+  background-color: $a3;
+  background-image: url(img/angular-grab.png);
+  background-position: center; 
+}
+.box2 {
+  background-color: $darkg;
+  background-image: url(img/js-grab.png);
+  background-position: center; 
+
+}
+.box3 {
+  background-color: $a4;
+
+}
+.box4 {
+  background-color: $a1;
+
+}
+.box5 {
+  background-color: $a2;
+
+}
+.box6 {
+  background-color: $main;
+}
+
+a {
+  text-decoration: none;
+}
+
+.see {
+  float: right;
 }

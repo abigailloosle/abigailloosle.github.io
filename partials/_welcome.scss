@@ -23,17 +23,54 @@ nav {
 
     li {
       cursor: pointer;
+      display: inline-block;
+      position: relative;
 
       a {
         text-decoration: none;
         padding: 15px;
         color: black;
       }
+
+      .nav-hover:after{
+        content: '';
+        position: absolute;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        background: #000000;
+        transition: width 5s;
+        -webkit-transition: width 5s;
+      }
+      
+      .nav-hover:hover:after{
+        width: 100%;
+        background: #000000;
+      }
     }
+ 
   }
 
   .upbutton {
     margin-top: 10px;
+  }
+
+  .pulse:hover {
+    animation: pulse 1s;
+  }
+
+  @keyframes pulse {
+    from {
+      transform: scale3d(1, 1, 1);
+    }
+
+    50% {
+      transform: scale3d(1.05, 1.05, 1.05);
+    }
+
+    to {
+      transform: scale3d(1, 1, 1);
+    }
   }
 
   .hide {

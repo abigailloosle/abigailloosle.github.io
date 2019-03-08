@@ -50,7 +50,6 @@ body {
 
 footer {
   background-color: $a1;
-  height: 80px;
   padding: 3%;
   display: flex;
   flex-flow: column nowrap;
@@ -80,8 +79,45 @@ footer {
   }
 }
 
-.grow { transition: all .2s ease-in-out; }
-.grow:hover { transform: scale(1.5); }
+.hero .button, footer .button {
+  margin-top: 20px;
+  margin-left: 0;
+  background-color: transparent;
+  border: 4px $cot solid;
+  color: black;
+}
+
+.hero .button {
+  margin-top: 250px;
+}
+
+.hobbies {
+  margin: 30px 20px;
+  padding: 30px;
+  background-color: white;
+  color: $dark;
+
+  p {
+    padding-bottom: 10px;
+  }
+
+  .row {
+    display: flex;
+  }
+
+  .hobby-intro {
+    flex-direction: column;
+    
+    .my-code {
+      width: 100%;
+      padding-bottom: 30px;
+    }
+  }
+
+  .center-block {
+    text-align: center;
+  }
+}
 
 // tablet view
 @media (min-width: 768px) {
@@ -100,10 +136,6 @@ footer {
 
     .hero {
       margin-left: 5%;
-
-      .button {
-        margin-top: 10px;
-      }
     }
 
     p {
@@ -115,7 +147,7 @@ footer {
     height: 35%;
     padding: 5% 5% 5% 10%;
 
-    h1 {
+    h2 {
       margin-bottom: 5%;
     }
 
@@ -125,6 +157,44 @@ footer {
       & + p {
         margin-bottom: 5%;
         width: 600px;
+      }
+    }
+  }
+
+  .hobbies {
+    padding: 7%;
+
+    p {
+      padding-top: 2%;
+    }
+
+    .hobby-intro {
+      display: flex;
+      flex-direction: row;
+
+      .about-info {
+        padding-right: 5%;
+      }
+
+      .my-code {
+        width: 100%;
+        padding-bottom: 30px;
+      }
+    }
+
+    .hobby-icons {
+      display: flex;
+      flex-flow: row wrap;
+      width: 70%;
+      margin-top: -15%;
+
+      .center-block {
+        width: 30%;
+        margin-top: 5%;
+      }
+
+      .left {
+        margin-right: 10%;
       }
     }
   }
@@ -195,6 +265,32 @@ footer {
       font-weight: bold;
       width: 200px;
       text-align: center;
+    }
+  }
+
+  .hero .button, footer .button {
+    margin-top: 22px;
+    margin-left: 2px;
+    background-color: transparent;
+    border: 2px #00000078 solid;
+    color: #00000078;
+    transition: .1s;
+  }
+
+  .hero .button:hover, footer .button:hover {
+    margin-top: 20px;
+    margin-left: 0;
+    background-color: transparent;
+    border: 4px $cot solid;
+    color: black;
+  }
+
+ .proj {
+    .explain {
+      flex-direction: row;
+    }
+    .backwards {
+      flex-flow: row-reverse;
     }
   }
 }
