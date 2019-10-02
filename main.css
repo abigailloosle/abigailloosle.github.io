@@ -60,7 +60,8 @@ header {
   header h1 {
     color: #46b2af;
     font-size: 65px;
-    margin-top: 0.7em; }
+    margin-top: 0.7em;
+    font-weight: 900; }
   header p {
     color: black; }
   header .hide-pic {
