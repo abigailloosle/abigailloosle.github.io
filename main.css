@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
 nav {
   display: flex;
   justify-content: center;
@@ -67,6 +66,13 @@ header {
   header .hide-pic {
     overflow: hidden;
     margin: auto 10% 0 auto; }
+
+.card {
+  box-shadow: 2px 6px 28px -5px rgba(0, 0, 0, 0.08);
+  transition: color 100ms ease, background-color 100ms ease, box-shadow 200ms ease; }
+
+.card:hover {
+  box-shadow: 4px 9px 28px 1px rgba(0, 0, 0, 0.2); }
 
 .passions {
   height: 70vh;
