@@ -67,11 +67,11 @@ header {
     overflow: hidden;
     margin: auto 10% 0 auto; }
 
-.card {
+.projcard {
   box-shadow: 2px 6px 28px -5px rgba(0, 0, 0, 0.08);
   transition: color 100ms ease, background-color 100ms ease, box-shadow 200ms ease; }
 
-.card:hover {
+.projcard:hover {
   box-shadow: 4px 9px 28px 1px rgba(0, 0, 0, 0.2); }
 
 .passions {
