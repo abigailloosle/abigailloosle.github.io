@@ -305,6 +305,8 @@ a {
     border: 1px solid #efefef;
     border-radius: 5px;
     padding: 15px 20px; }
+    .projgrid .projcardhr {
+      border: 0.75px solid #efefef; }
 
 @media (min-width: 768px) {
   .projgrid {
