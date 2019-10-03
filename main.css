@@ -301,13 +301,19 @@ a {
   border: 1px solid black;
   flex-direction: column; }
   .projgrid .projcard {
-    margin-bottom: 20px; }
+    margin-bottom: 20px;
+    height: 250px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    padding: 15px 20px; }
 
 @media (min-width: 768px) {
   .projgrid {
-    max-width: 950px;
+    max-width: 1050px;
     display: grid;
-    grid-template-areas: " card1 card2 card2 " " card3 card4 card5 " " card6 card6 card7 " " card8 card9 card9 " " card10 card11 card12 "; }
+    grid-template-areas: " card1 card2 card2 " " card3 card4 card5 " " card6 card6 card7 " " card8 card9 card9 " " card10 card11 card12 ";
+    grid-gap: 25px;
+    margin-top: 50px; }
     .projgrid #c1 {
       grid-area: card1; }
     .projgrid #c2 {
@@ -526,6 +532,12 @@ footer {
     background-color: transparent;
     border: 4px #e8c547 solid;
     color: black; }
+
+  #repo {
+    margin-top: 60px; }
+
+  #repo:hover {
+    margin-top: 58px; }
 
   .proj .explain {
     flex-direction: row; }
