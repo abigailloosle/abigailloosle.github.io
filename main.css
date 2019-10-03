@@ -298,11 +298,10 @@ a {
   display: flex;
   max-width: 400px;
   margin: 0 auto;
-  border: 1px solid black;
   flex-direction: column; }
   .projgrid .projcard {
     margin-bottom: 20px;
-    height: 250px;
+    height: 350px;
     border: 1px solid #efefef;
     border-radius: 5px;
     padding: 15px 20px; }
