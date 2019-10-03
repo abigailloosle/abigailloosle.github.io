@@ -68,6 +68,8 @@ header {
   header .hide-pic {
     overflow: hidden;
     margin: auto 10% 0 auto; }
+  header .links {
+    margin-top: 20px; }
   header .links .fab {
     font-size: 1.5em; }
   header .links a:link {
