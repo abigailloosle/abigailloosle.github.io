@@ -32,6 +32,11 @@ nav {
         color: black;
       }
 
+      .nav-hover {
+        transition: width 5s;
+        -webkit-transition: width 5s;
+      }
+
       .nav-hover:after{
         content: '';
         position: absolute;
@@ -39,8 +44,6 @@ nav {
         display: block;
         margin-top: 5px;
         background: #000000;
-        transition: width 5s;
-        -webkit-transition: width 5s;
       }
       
       .nav-hover:hover:after{

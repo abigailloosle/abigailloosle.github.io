@@ -24,15 +24,16 @@ nav {
         text-decoration: none;
         padding: 15px;
         color: black; }
+      nav ul li .nav-hover {
+        transition: width 5s;
+        -webkit-transition: width 5s; }
       nav ul li .nav-hover:after {
         content: '';
         position: absolute;
         height: 2px;
         display: block;
         margin-top: 5px;
-        background: #000000;
-        transition: width 5s;
-        -webkit-transition: width 5s; }
+        background: #000000; }
       nav ul li .nav-hover:hover:after {
         width: 100%;
         background: #000000; }
@@ -305,7 +306,7 @@ a {
     border: 1px solid #efefef;
     border-radius: 5px;
     padding: 15px 20px; }
-    .projgrid .projcardhr {
+    .projgrid .projcard hr {
       border: 0.75px solid #efefef; }
 
 @media (min-width: 768px) {
