@@ -308,6 +308,10 @@ a {
     padding: 15px 20px; }
     .projgrid .projcard hr {
       border: 0.75px solid #efefef; }
+    .projgrid .projcard .stand-card, .projgrid .projcard .horizon-card {
+      padding: 10px 20px; }
+  .projcard .projgrid .horizon-card {
+    display: flex; }
 
 @media (min-width: 768px) {
   .projgrid {

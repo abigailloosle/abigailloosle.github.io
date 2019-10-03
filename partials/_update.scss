@@ -15,6 +15,14 @@
         hr {
             border: 0.75px solid #efefef
         }
+
+        .stand-card, .horizon-card {
+            padding: 10px 20px;
+        }
+    }
+
+    .projcard & .horizon-card {
+        display: flex;
     }
 }
 
