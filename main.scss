@@ -4,6 +4,7 @@
 @import "partials/_passions.scss";
 @import "partials/_projects.scss";
 @import "partials/_skills.scss";
+@import "partials/_update.scss";
 
 * {
   margin: 0;
@@ -295,6 +296,7 @@ footer {
   }
 }
 
+//desktop view
 @media (min-width: 1200px) {
   header {
     height: 500px;

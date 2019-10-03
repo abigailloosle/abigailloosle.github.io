@@ -294,6 +294,12 @@ a {
 .design h2 {
   background-color: #229edb; }
 
+.projgrid {
+  display: grid;
+  max-width: 850px;
+  margin: 0 auto;
+  border: 1px solid black; }
+
 * {
   margin: 0;
   padding: 0;
