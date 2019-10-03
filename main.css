@@ -533,10 +533,10 @@ footer {
     border: 4px #e8c547 solid;
     color: black; }
 
-  #repo {
+  .hero .button {
     margin-top: 60px; }
 
-  #repo:hover {
+  .hero .button:hover {
     margin-top: 58px; }
 
   .proj .explain {
