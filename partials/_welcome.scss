@@ -104,6 +104,30 @@ header {
     overflow: hidden;
     margin: auto 10% 0 auto;
   }
+
+  .links .fab {
+    font-size: 1.5em;
+  }
+
+  .links a:link {
+    color: $darkg;
+  }
+
+  .links a:visited {
+    color: $card;
+  }
+
+  .links a:hover {
+    color: $a3;
+  }
+
+  .links a:active {
+    color: white;
+  }
+}
+
+#repo {
+  background-color: #f0bd2682;
 }
 
 .projcard {
