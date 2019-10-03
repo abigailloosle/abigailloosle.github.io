@@ -4,25 +4,8 @@
     margin: 0 auto;
     border: 1px solid black;
 
-    flex-direction: column;
-
     .projcard {
         margin-bottom: 20px;
         height: 250px;
     }
-}
-
-//tablet view
-@media (min-width: 768px) {
-    .projgrid {
-        max-width: 950px;
-        
-
-    }
-
-}
-
-//desktop view
-@media (min-width: 1200px) {
-
 }
