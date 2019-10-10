@@ -108,6 +108,11 @@ header {
   .links {
     margin-top: 20px;
   }
+}
+
+.links a {
+    padding-right: 10px;
+  }
 
   .links .fab {
     font-size: 1.5em;
@@ -128,17 +133,7 @@ header {
   .links a:active {
     color: white;
   }
-}
 
 #repo {
   background-color: #f0bd2682;
-}
-
-.projcard {
-  box-shadow: 2px 6px 28px -5px rgba(0, 0, 0, 0.08);
-      transition: color 100ms ease, background-color 100ms ease, box-shadow 200ms ease;
-}
-
-.projcard:hover {
-  box-shadow: 4px 9px 28px 1px rgba(0, 0, 0, 0.2);
 }

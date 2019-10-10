@@ -1,35 +1,40 @@
 .projgrid {
     display: flex;
-    max-width: 400px;
+    max-width: 450px;
     margin: 0 auto;
 
     flex-direction: column;
 
     .projcard {
         margin-bottom: 20px;
-        height: 400px;
+        height: 430px;
         border: 1px solid #efefef;
         border-radius: 5px;
-        padding: 15px 20px;
-
-        hr {
-            border: 0.75px solid #efefef
-        }
+        overflow: hidden;
 
         .stand-card, .horizon-card {
             padding: 10px 20px;
         }
-    }
 
-    .projcard & .horizon-card {
-        display: flex;
+        img {
+            width: 100%;
+        }
     }
+}
+
+.projcard {
+  box-shadow: 2px 6px 28px -5px rgba(0, 0, 0, 0.08);
+      transition: color 100ms ease, background-color 100ms ease, box-shadow 200ms ease;
+}
+
+.projcard:hover {
+  box-shadow: 4px 9px 28px 1px rgba(0, 0, 0, 0.2);
 }
 
 //tablet view
 @media (min-width: 768px) {
     .projgrid {
-        max-width: 1050px;
+        max-width: 1100px;
         display: grid;
         grid-template-areas: 
             " card1 card2 card2 "
@@ -39,12 +44,15 @@
             " card10 card11 card12 ";
         grid-gap: 25px;
         margin-top: 50px;
+        width: auto !important;
 
             #c1 {
                 grid-area: card1;
             }
             #c2 {
                 grid-area: card2;
+                display: flex;
+                flex-direction: row;
             }
             #c3 {
                 grid-area: card3;
@@ -57,6 +65,8 @@
             }
             #c6 {
                 grid-area: card6;
+                display: flex;
+                flex-direction: row;
             }
             #c7 {
                 grid-area: card7;
@@ -66,6 +76,8 @@
             }
             #c9 {
                 grid-area: card9;
+                display: flex;
+                flex-direction: row;
             }
             #c10 {
                 grid-area: card10;

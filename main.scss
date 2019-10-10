@@ -98,23 +98,6 @@ footer {
   background-color: white;
   color: $dark;
 
-  p {
-    padding-bottom: 10px;
-  }
-
-  .row {
-    display: flex;
-  }
-
-  .hobby-intro {
-    flex-direction: column;
-    
-    .my-code {
-      width: 100%;
-      padding-bottom: 30px;
-    }
-  }
-
   .center-block {
     text-align: center;
   }
@@ -141,6 +124,10 @@ footer {
 
     p {
       width: 400px;
+    }
+
+    #repo {
+      background-color: transparent;
     }
   }
 

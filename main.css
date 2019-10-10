@@ -70,26 +70,27 @@ header {
     margin: auto 10% 0 auto; }
   header .links {
     margin-top: 20px; }
-  header .links .fab {
-    font-size: 1.5em; }
-  header .links a:link {
-    color: #3a8ca3; }
-  header .links a:visited {
-    color: #274361; }
-  header .links a:hover {
-    color: #fe9000; }
-  header .links a:active {
-    color: white; }
+
+.links a {
+  padding-right: 10px; }
+
+.links .fab {
+  font-size: 1.5em; }
+
+.links a:link {
+  color: #3a8ca3; }
+
+.links a:visited {
+  color: #274361; }
+
+.links a:hover {
+  color: #fe9000; }
+
+.links a:active {
+  color: white; }
 
 #repo {
   background-color: #f0bd2682; }
-
-.projcard {
-  box-shadow: 2px 6px 28px -5px rgba(0, 0, 0, 0.08);
-  transition: color 100ms ease, background-color 100ms ease, box-shadow 200ms ease; }
-
-.projcard:hover {
-  box-shadow: 4px 9px 28px 1px rgba(0, 0, 0, 0.2); }
 
 .passions {
   height: 70vh;
@@ -312,33 +313,41 @@ a {
 
 .projgrid {
   display: flex;
-  max-width: 400px;
+  max-width: 450px;
   margin: 0 auto;
   flex-direction: column; }
   .projgrid .projcard {
     margin-bottom: 20px;
-    height: 400px;
+    height: 430px;
     border: 1px solid #efefef;
     border-radius: 5px;
-    padding: 15px 20px; }
-    .projgrid .projcard hr {
-      border: 0.75px solid #efefef; }
+    overflow: hidden; }
     .projgrid .projcard .stand-card, .projgrid .projcard .horizon-card {
       padding: 10px 20px; }
-  .projcard .projgrid .horizon-card {
-    display: flex; }
+    .projgrid .projcard img {
+      width: 100%; }
+
+.projcard {
+  box-shadow: 2px 6px 28px -5px rgba(0, 0, 0, 0.08);
+  transition: color 100ms ease, background-color 100ms ease, box-shadow 200ms ease; }
+
+.projcard:hover {
+  box-shadow: 4px 9px 28px 1px rgba(0, 0, 0, 0.2); }
 
 @media (min-width: 768px) {
   .projgrid {
-    max-width: 1050px;
+    max-width: 1100px;
     display: grid;
     grid-template-areas: " card1 card2 card2 " " card3 card4 card5 " " card6 card6 card7 " " card8 card9 card9 " " card10 card11 card12 ";
     grid-gap: 25px;
-    margin-top: 50px; }
+    margin-top: 50px;
+    width: auto !important; }
     .projgrid #c1 {
       grid-area: card1; }
     .projgrid #c2 {
-      grid-area: card2; }
+      grid-area: card2;
+      display: flex;
+      flex-direction: row; }
     .projgrid #c3 {
       grid-area: card3; }
     .projgrid #c4 {
@@ -346,13 +355,17 @@ a {
     .projgrid #c5 {
       grid-area: card5; }
     .projgrid #c6 {
-      grid-area: card6; }
+      grid-area: card6;
+      display: flex;
+      flex-direction: row; }
     .projgrid #c7 {
       grid-area: card7; }
     .projgrid #c8 {
       grid-area: card8; }
     .projgrid #c9 {
-      grid-area: card9; }
+      grid-area: card9;
+      display: flex;
+      flex-direction: row; }
     .projgrid #c10 {
       grid-area: card10; }
     .projgrid #c11 {
@@ -431,15 +444,6 @@ footer {
   padding: 30px;
   background-color: white;
   color: #131c33; }
-  .hobbies p {
-    padding-bottom: 10px; }
-  .hobbies .row {
-    display: flex; }
-  .hobbies .hobby-intro {
-    flex-direction: column; }
-    .hobbies .hobby-intro .my-code {
-      width: 100%;
-      padding-bottom: 30px; }
   .hobbies .center-block {
     text-align: center; }
 
@@ -457,6 +461,8 @@ footer {
       margin-left: 5%; }
     header p {
       width: 400px; }
+    header #repo {
+      background-color: transparent; }
 
   .passions {
     height: 35%;

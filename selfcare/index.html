@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>SelfCare R Us | Home Page</title>
+
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<!-- Welcome fellow developer to my site, I will be leaving some comments to walk you through my code -->
+
+<body>
+  <header>
+    <!-- standard navigation bar with a list -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" class="nav-space">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-space">About</a>
+        </li>
+        <li>
+          <a href="inspo.html" class="nav-space">Inspo</a>
+        </li>
+        <!-- I included my logo inside of the list so that I could center it easier -->
+        <li class="logo">
+          <img src="images/logo-only.png" alt="Logo for Self Care R Us" />
+        </li>
+        <li>
+          <a href="act.html" class="nav-space">Activities</a>
+        </li>
+        <li>
+          <a href="faq.html" class="nav-space">FAQ</a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-space">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- hero/landing splash with image and welcome -->
+  <section class="hero">
+    <div class="hero-align">
+      <!-- the span is needed to make this greeting split onto 2 lines where I want it to split -->
+      <h1>We know
+        <span>what it's like</span>
+      </h1>
+
+      <!-- this span is for making the name of the site bold -->
+      <p>
+        Life is fast paced, but
+        <span>Self Care R Us</span> knows it is crucial to take a break once in a while.
+      </p>
+      <a href="act.html" class="button">Get Ideas</a>
+    </div>
+  </section>
+
+  <main>
+    <!-- flex container, row -->
+    <section class="about-us">
+      <img src="images/plan.jpg" alt="Journal with the phrase: Start today, written inside" />
+
+      <!-- flex container, column -->
+      <div class="about-align">
+        <h2>Self Care R Us is all about taking time for you</h2>
+        <p>
+          I have heard it a hundred times, “BUT I can’t today because ...” It doesn’t matter. No matter how much you’ve tried, or how
+          many times you’ve started, just get started in taking care of you today. Do it. Just start!
+        </p>
+        <a href="act.html" class="button">More about me</a>
+      </div>
+    </section>
+
+    <!-- flex container, row -->
+    <div class="pics">
+      <div class="photo">
+        <img src="images/balance.jpg" alt="Stones resting one on top of the other, at balance" />
+        <!-- link to other page, only visible on hover -->
+        <a href="inspo.html">
+          <div class="overlay">
+            <h3>Balance</h3>
+            <p>
+              One of the keys to a happy and balanced life is just that, finding balance
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="photo">
+        <img src="images/green.jpg" alt="Dark green leaves with a neon sign that reads breathe" />
+        <!-- link to other page, only visible on hover -->
+        <a href="faq.html">
+          <div class="overlay">
+            <h3>FAQs</h3>
+            <p>
+              It’s only normal to have questions, and we have answers. At least some of them anyway!
+            </p>
+          </div>
+        </a>
+      </div>
+
+      <div class="photo">
+        <img src="images/beach.jpg" alt="Aerial of waves coming onto a beach shore" />
+        <!-- link to other page, only visible on hover -->
+        <a href="contact.html">
+          <div class="overlay">
+            <h3>Let's talk</h3>
+            <p>
+              I am happy to talk about collaborating or really any topic! Just reach out
+            </p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="full-width">
+    <!-- second nav, will apply style by using element, not class -->
+    <nav>
+      <ul>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="practice/index.html">Practice</a>
+        </li>
+        <li>
+          <a href="styleguide/styleguide.html">Style Guide</a>
+        </li>
+        <li>
+          <a href="https://abigailloosle.github.io">Personal Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- full logo with name -->
+    <img src="images/full-logo.png" alt="Logo for Self Care R Us" />
+    <p>All content &copy; Abby Loosle.</p>
+  </footer>
+</body>
+
+</html>

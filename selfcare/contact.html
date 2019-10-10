@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>SelfCare R Us | Contact Page</title>
+
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <header>
+    <!-- standard navigation bar with a list -->
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html" class="nav-space">Home</a>
+        </li>
+        <li>
+          <a href="about.html" class="nav-space">About</a>
+        </li>
+        <li>
+          <a href="inspo.html" class="nav-space">Inspo</a>
+        </li>
+        <!-- I included my logo inside of the list so that I could center it easier -->
+        <li class="logo">
+          <img src="images/logo-only.png" alt="Logo for Self Care R Us" />
+        </li>
+        <li>
+          <a href="act.html" class="nav-space">Activities</a>
+        </li>
+        <li>
+          <a href="faq.html" class="nav-space">FAQ</a>
+        </li>
+        <li>
+          <a href="contact.html" class="nav-space">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="contact-body">
+
+    <!-- this allows for the card pop over the background image -->
+    <div class="pop">
+
+      <!-- icon I designed to go with SelfCareRUs theme -->
+      <img src="images/mail.png" alt="Email icon" />
+
+      <!-- flex container for column to display form -->
+      <div class="form-contain">
+        <div class="form-intro">
+          <h1>Got some feedback?</h1>
+          <p>
+            I don't claim to know everything, so if you have an idea, a suggestion, or just some feedback, let me know!
+          </p>
+        </div>
+
+        <form action="/action_page.php">
+          <br />
+          <input type="text" name="name" placeholder="name here" />
+          <br />
+
+          <br />
+          <input type="text" name="email" placeholder="email here" />
+          <br />
+
+          <br />
+          <textarea placeholder="message here" rows="4"></textarea>
+          <br />
+
+          <input type="submit" value="Submit" />
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="full-width">
+    <!-- second nav, will apply style by using element, not class -->
+    <nav>
+      <ul>
+        <li>
+          <a href="contact.html">Contact</a>
+        </li>
+        <li>
+          <a href="practice/index.html">Practice</a>
+        </li>
+        <li>
+          <a href="styleguide/styleguide.html">Style Guide</a>
+        </li>
+        <li>
+          <a href="https://abigailloosle.github.io">Personal Portfolio</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- full logo with name -->
+    <img src="images/full-logo.png" alt="Logo for Self Care R Us" />
+    <p>All content &copy; Abby Loosle.</p>
+  </footer>
+</body>
+
+</html>

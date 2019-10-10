@@ -1,0 +1,307 @@
+@import url("https://fonts.googleapis.com/css?family=Arimo|Pacifico");
+
+/* --------------------------------------------- */
+/* --------- Branding: Color Palette ----------- */
+/* --------------------------------------------- */
+/* These are the colors of the boxes under the Branding section */
+#swatch1 {
+  background-color: #f4d8cd;
+}
+#swatch2 {
+  background-color: #acbed8;
+}
+#swatch3 {
+  background-color: #92dce5;
+}
+#swatch4 {
+  background-color: #3a405a;
+}
+
+/* ----------------------------------------------------- */
+/* --------- Typography: Heading & Body Copy ----------- */
+/* ----------------------------------------------------- */
+/* These are the font families of all the headings and body copy */
+
+body {
+  font-family: "Arimo:400, 400i", Helvetica, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Pacifico", serif;
+}
+
+/* -------------------------------------------------- */
+/* --------- Navigation: Main & Secondary ----------- */
+/* -------------------------------------------------- */
+/* Colors, style, floating, shapes, etc of main & secondary navs */
+
+/* Main Navigation Style */
+#mainnav {
+}
+#mainnav .group {
+  margin-left: -50px;
+}
+#mainnav ul {
+  background-color: #acbed8;
+  padding-top: 30px;
+  text-align: center;
+  height: 140px;
+  margin-left: 0;
+}
+#mainnav li {
+  display: inline;
+  list-style: none;
+  padding-right: 15px;
+  text-decoration: none;
+}
+.navtext {
+  padding-bottom: 10px;
+}
+#mainnav img {
+  width: 100px;
+  position: relative;
+}
+#mainnav a:link {
+  color: #3a405a;
+  text-decoration: none;
+  font-style: normal;
+}
+#mainnav a:visited {
+  color: #f4d8cd;
+  text-decoration: none;
+  font-style: normal;
+}
+#mainnav a:hover {
+  color: #92dce5;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: normal;
+}
+#mainnav a:active {
+  color: #f4d8cd;
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* Secondary Navigation Style */
+#secondnav ul {
+  background-color: #3a405a;
+  padding-top: 30px;
+  text-align: center;
+  height: 70px;
+  margin-left: 0;
+}
+#secondnav li {
+  display: inline;
+  list-style: none;
+  padding-right: 15px;
+  text-decoration: none;
+}
+#secondnav a:link {
+  color: #ffffff;
+  text-decoration: none;
+  font-style: normal;
+}
+#secondnav a:visited {
+  color: #f4d8cd;
+  text-decoration: none;
+  font-style: normal;
+}
+#secondnav a:hover {
+  color: #92dce5;
+  text-decoration: none;
+  font-weight: bold;
+  font-style: normal;
+}
+#secondnav a:active {
+  color: #f4d8cd;
+  text-decoration: none;
+  font-style: normal;
+}
+
+/* ----------------------------------- */
+/* --------- HTML Elements ----------- */
+/* ----------------------------------- */
+/* Styling for all HTML Elements */
+
+/* True for all headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #3a405a;
+}
+
+/* Style for individual headings */
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2.5em;
+}
+
+h3 {
+  font-size: 2em;
+}
+
+h4 {
+  font-size: 1.5em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 0.5em;
+}
+
+/* List Styles */
+ul {
+  list-style-type: square;
+}
+ul li {
+  font-size: 1em;
+}
+
+ol {
+  list-style-type: upper-roman;
+}
+ol li {
+  font-size: 1em;
+}
+
+/* Non-Navigational Link Styles */
+/* This is for all default links on your page */
+a:link {
+  color: #92dce5;
+  text-decoration: none;
+  font-style: italic;
+}
+a:visited {
+  color: #3a405a;
+}
+a:hover {
+  font-weight: bold;
+}
+a:active {
+  color: #acbed8;
+  text-decoration: underline;
+}
+
+/* This is for secondary link styles (possibly in your footer, etc) */
+.linkstyle2 a:link {
+  background-color: #3a405a;
+  text-decoration: underline;
+  color: #ffffff;
+  font-style: italic;
+}
+.linkstyle2 a:visited {
+  color: #f4d8cd;
+}
+.linkstyle2 a:hover {
+  color: #92dce5;
+  font-weight: bold;
+}
+.linkstyle2 a:active {
+  color: #acbed8;
+}
+
+/* Paragraph Styles */
+p {
+  color: #3a405a;
+  padding: 5px;
+}
+
+p .dark-p-bkg {
+  background-color: #3a405a;
+  color: #f4d8cd;
+}
+
+/* Figure and Figcaption Styles */
+figure {
+  text-align: center;
+  background-color: #3a405a;
+  width: 350px;
+  border-radius: 20px;
+}
+figure img {
+  width: 300px;
+}
+figcaption {
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #acbed8;
+  padding-bottom: 5px;
+}
+
+/* ------------------------------------- */
+/* --------- Style Guide CSS ----------- */
+/* ------------------------------------- */
+/* The following CSS is used for the styling of the structure of the Style Guide itself */
+body {
+  width: 700px;
+  margin: 10px auto;
+  border: 1px solid #777;
+  padding: 20px;
+}
+
+.styleguide {
+  font-family: "Courier New", Courier, monospace;
+}
+h1.styleguide,
+h2.styleguide,
+h3.styleguide,
+h4.styleguide,
+h5.styleguide,
+h6.styleguide {
+  color: #777;
+  font-family: "Courier New", Courier, monospace;
+}
+h2.styleguide {
+  background-color: #777;
+  border-radius: 15px;
+  padding: 15px;
+  margin-left: -15px;
+  color: white;
+}
+p.styleguide {
+  color: #777;
+  font-family: "Courier New", Courier, monospace;
+}
+
+section {
+  margin-top: -10px;
+  margin-bottom: 70px;
+}
+.colorgroup {
+  float: left;
+  width: 170px;
+}
+.colorgroup h4 {
+  font-size: 0.9em;
+}
+.colorgroup p {
+  font-size: 0.8em;
+}
+.clear {
+  clear: both;
+}
+.swatches {
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+}
+
+.wireframe img {
+  width: 700px;
+  padding-bottom: 30px;
+}
