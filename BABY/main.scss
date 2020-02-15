@@ -1,0 +1,72 @@
+@import "variables";
+
+body {
+    margin: none;
+    background: $light;
+    font-family: 'Fredoka One', sans-serif;
+}
+
+.wrapper {
+    text-align: center;
+    max-width: 1200px;
+}
+
+.q1, .q2, .q3, .q4, .q5, .q6, .q7, .final {
+    display: none;
+}
+
+.landing {
+    width: 100vw;
+    height: 100vh;
+}
+
+.main-btn {
+    padding: 10px 15px;
+    color: #fff;
+    border-radius: 30px;
+    cursor: e-resize;
+}
+
+h1, h2, h3, h4 {
+    margin: 10px 0;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-size: 125px;
+}
+
+h2 {
+    font-size: 80px;
+}
+
+span, p {
+    font-size: 30px;
+}
+
+.landing h1, .landing h2 {
+    color: $bboy;
+}
+
+.landing h2 { padding-top: 20px; padding-bottom: 30px;}
+
+.landing p {
+    color: $bgirl;
+}
+
+.landing .main-btn {
+    background: $bgirl;
+    margin: 40px 0;
+}
+
+.landing a {
+    text-decoration: none;
+}
+
+.final h1 {
+  text-align: center;
+  color: #95CCE5;
+  font-size: 5em;
+  font-family: sans-serif;
+  z-index: 500;
+}
