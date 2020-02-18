@@ -7,10 +7,8 @@
 
     <!-- stylesheet -->
     <link rel="stylesheet" type="text/css" href="style.css">
-
     <!-- fonts -->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-
     <!-- gimme jquery -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -20,64 +18,21 @@
     <head profile="http://www.w3.org/2005/10/profile">
     <link rel="icon" type="image/png" href="./favicon.ico">
 </head>
-<body>
+<body id="home">
     <div class="wrapper">
         <div class="landing">
             <h1>We have a <br> surprise</h1>
             <h2>Nick and Abby are expecting a baby!</h2>
 
-            <span class="main-btn" id="start">Ready to find out?</span>
-            <p>It won’t be that easy! To find out the gender of their August baby<br> you’ll have to prove you know the couple</p>
+            <!-- <span class="main-btn" id="start">Ready to find out baby's gender?</span> -->
+            <a class="main-btn" id="start" href="./meet.html">Ready to find out <br>baby's gender?</a>
+            <p>It won’t be that easy! To find out the gender of their August baby<br> you’ll have to prove how well you know the couple</p>
 
             <a href="./final.html" class="key">loosle</a>
-        </div>
-
-        <div class="q1">
-            <h3>Question 1</h3>
-            <h2>Where did Nick and Abby first meet?</h2>
-        
-            <div class="options">
-                <span class="wrong">Mutual Activity</span>
-                <span class="wrong">SpanishClass</span>
-                <span class="wrong">English Class</span>
-                <span class="wrong">Seminary</span>
-            </div>
-
-            <div class="explanation">
-                <p>August 18, 2008 in Mrs. Leis’ infamous Spanish class. </p>
-                <p>The first thing Abby ever said was, “So .. does anyone else speak Chinese
-                or another language?”</p>
-
-                <span class="main-btn" id="next1">Next</span>
-            </div>
-        </div>
-
-        <div class="q2">
-            <h3>Question 2</h3>
-            <h2>Where did Nick and Abby first meet?</h2>
-        
-            <div class="options">
-                <span class="wrong">Mutual Activity</span>
-                <span class="wrong">SpanishClass</span>
-                <span class="wrong">English Class</span>
-                <span class="wrong">Seminary</span>
-            </div>
-        
-            <div class="explanation">
-                <p>August 18, 2008 in Mrs. Leis’ infamous Spanish class. </p>
-                <p>The first thing Abby ever said was, “So .. does anyone else speak Chinese or another language?”</p>
-            </div>
         </div>
     </div>
 </body>
 <script>
-    $(document).ready(function () {
-        $("#start").click(function () {
-            $("body").css("background-color", "#FFE5EF");
-            $(".landing").css("display", "none");
-            $(".q1").css("display", "block");
-        });
-    });
         
 </script>
 </html>

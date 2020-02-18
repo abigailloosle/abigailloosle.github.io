@@ -42,39 +42,65 @@
 .confetti--animation-fast {
   animation: confetti-fast 1.25s linear 1 forwards; }
 
-h1 {
-  text-align: center;
-  color: #95CCE5;
-  font-size: 10em;
-  margin-bottom: 0;
-  z-index: 500;
-  font-family: 'Fredoka One', sans-serif; }
-
-h2 {
+.final h1 {
   text-align: center;
   color: #95CCE5;
   font-size: 5em;
-  margin-top: 0;
-  z-index: 500;
-  font-family: 'Fredoka One', sans-serif; }
+  font-family: 'Fredoka One', sans-serif;
+  z-index: 500; }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
   .final h1 {
-    font-size: 7em; }
+    font-size: 7em !important; }
 
   .final h2 {
-    font-size: 4em; } }
+    margin-top: 20px;
+    font-size: 4em !important; } }
+@media only screen and (max-width: 600px) {
+  .landing h1 {
+    font-size: 70px; }
+
+  .landing h2 {
+    font-size: 50px;
+    padding-top: 40px; }
+
+  .landing #start {
+    margin: 20px 0; }
+
+  .inner h2 {
+    font-size: 50px; }
+
+  .inner .options {
+    flex-direction: column !important;
+    flex-wrap: nowrap !important;
+    width: 70% !important;
+    margin: 0 !important;
+    margin-left: 50px !important; }
+
+  .inner .options span {
+    width: 100% !important; }
+
+  .inner .options span:nth-of-type(1),
+  .inner .options span:nth-of-type(3) {
+    margin-right: 0; }
+
+  .inner .options span {
+    padding-top: 0 !important;
+    height: 40px !important; }
+
+  .girl .inner .main-btn,
+  .boy .inner .main-btn {
+    margin: 30px 0 !important; }
+
+  span.wrong.main-btn.big-btn {
+    height: 90px !important; } }
 body {
-  margin: none;
+  margin: 0;
   background: #F0F0F0;
   font-family: 'Fredoka One', sans-serif; }
 
 .wrapper {
-  text-align: center;
-  max-width: 1200px; }
-
-.q1, .q2, .q3, .q4, .q5, .q6, .q7, .final {
-  display: none; }
+  text-align: center; }
 
 .landing {
   width: 100vw;
@@ -84,19 +110,32 @@ body {
   padding: 10px 15px;
   color: #fff;
   border-radius: 30px;
-  cursor: e-resize; }
+  cursor: e-resize;
+  white-space: normal;
+  display: inline-block; }
 
 h1, h2, h3, h4 {
   margin: 10px 0; }
 
 h1 {
   text-transform: uppercase;
-  font-size: 125px; }
+  font-size: 125px;
+  text-align: center;
+  font-size: 10em;
+  margin-bottom: 0;
+  z-index: 500;
+  font-family: 'Fredoka One', sans-serif; }
 
 h2 {
-  font-size: 80px; }
+  font-size: 80px;
+  text-align: center;
+  color: #95CCE5;
+  font-size: 5em;
+  margin-top: 0;
+  z-index: 500;
+  font-family: 'Fredoka One', sans-serif; }
 
-span, p {
+span, p, a {
   font-size: 30px; }
 
 .landing h1, .landing h2 {
@@ -110,17 +149,84 @@ span, p {
   color: #F4BED6; }
 
 .landing .main-btn {
-  background: #F4BED6;
+  background-color: #F4BED6;
   margin: 40px 0; }
 
 .landing a {
   text-decoration: none; }
 
-.final h1 {
-  text-align: center;
-  color: #95CCE5;
-  font-size: 5em;
-  font-family: sans-serif;
-  z-index: 500; }
+a:link {
+  color: #fff; }
+
+a:visited {
+  color: #fff; }
+
+a:hover {
+  color: #fff; }
+
+a:active {
+  color: #fff; }
+
+a.key {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  color: #F5F5F5 !important; }
+
+a.key:hover {
+  color: #F2F2F2 !important; }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%); }
+  100% {
+    transform: translateX(0); } }
+body {
+  animation: 1s ease-out 0s 1 slideInFromLeft; }
+
+body.girl {
+  background: #FFE5EF; }
+
+.girl .inner h1, .girl .inner h2, .girl .inner h3, .girl .inner p {
+  color: #F4BED6; }
+
+.girl .inner .main-btn {
+  background-color: #F4BED6;
+  margin: 40px 0; }
+
+body.boy {
+  background: #E5F0FF; }
+
+.boy .inner h1, .boy .inner h2, .boy .inner h3, .boy .inner p {
+  color: #95CCE5; }
+
+.boy .inner .main-btn {
+  background-color: #95CCE5;
+  margin: 40px 0; }
+
+.inner .options {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center; }
+
+.inner .options span {
+  width: 40%;
+  height: 100px;
+  padding-top: 50px;
+  font-size: 40px;
+  transition: .2s; }
+
+.inner .options span:hover {
+  position: relative;
+  top: -5px;
+  transition: .2s;
+  box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }
+
+.inner .options span:nth-of-type(1),
+.inner .options span:nth-of-type(3) {
+  margin-right: 20px; }
 
 /*# sourceMappingURL=style.css.map */

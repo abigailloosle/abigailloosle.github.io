@@ -1,20 +1,21 @@
 @import "variables";
 @import "final";
+@import "response";
 
 body {
-    margin: none;
+    margin: 0;
     background: $light;
     font-family: 'Fredoka One', sans-serif;
 }
 
 .wrapper {
     text-align: center;
-    max-width: 1200px;
+    // max-width: 1200px;
 }
 
-.q1, .q2, .q3, .q4, .q5, .q6, .q7 {
-    display: none;
-}
+// .q1, .q2, .q3, .q4, .q5, .q6, .q7 {
+//     display: none;
+// }
 
 .landing {
     width: 100vw;
@@ -26,6 +27,8 @@ body {
     color: #fff;
     border-radius: 30px;
     cursor: e-resize;
+    white-space: normal;
+    display: inline-block;
 }
 
 h1, h2, h3, h4 {
@@ -35,13 +38,24 @@ h1, h2, h3, h4 {
 h1 {
     text-transform: uppercase;
     font-size: 125px;
+    text-align: center;
+    font-size: 10em;
+    margin-bottom: 0;
+    z-index: 500;
+    font-family: 'Fredoka One', sans-serif;
 }
 
 h2 {
     font-size: 80px;
+    text-align: center;
+    color: #95CCE5;
+    font-size: 5em;
+    margin-top: 0;
+    z-index: 500;
+    font-family: 'Fredoka One', sans-serif;
 }
 
-span, p {
+span, p, a {
     font-size: 30px;
 }
 
@@ -56,7 +70,7 @@ span, p {
 }
 
 .landing .main-btn {
-    background: $bgirl;
+    background-color: $bgirl;
     margin: 40px 0;
 }
 
@@ -64,10 +78,96 @@ span, p {
     text-decoration: none;
 }
 
-.final h1 {
-  text-align: center;
-  color: #95CCE5;
-  font-size: 5em;
-  font-family: sans-serif;
-  z-index: 500;
+a:link {
+  color: #fff;
+}
+a:visited {
+  color: #fff;
+}
+a:hover {
+  color: #fff;
+}
+a:active {
+  color: #fff;
+}
+
+a.key {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #F5F5F5 !important;
+}
+
+a.key:hover {
+    color: #F2F2F2 !important;
+}
+
+// ANIMATE
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+body {
+  animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+
+body.girl {
+    background: $lgirl;
+}
+
+.girl .inner h1, .girl .inner h2, .girl .inner h3, .girl .inner p {
+    color: $bgirl;
+}
+
+.girl .inner .main-btn {
+    background-color: $bgirl;
+    margin: 40px 0;
+}
+
+body.boy {
+    background: $lboy;
+}
+
+.boy .inner h1, .boy .inner h2, .boy .inner h3, .boy .inner p {
+    color: $bboy;
+}
+
+.boy .inner .main-btn {
+    background-color: $bboy;
+    margin: 40px 0;
+}
+
+.inner .options {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    width: 80%;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.inner .options span {
+    width: 40%;
+    height: 100px;
+    padding-top: 50px;
+    font-size: 40px;
+    transition: .2s;
+}
+
+.inner .options span:hover {
+    position: relative;
+    top: -5px;
+    transition: .2s;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.19),0 6px 20px 0 rgba(0,0,0,0.19) !important;
+}
+
+.inner .options span:nth-of-type(1), 
+.inner .options span:nth-of-type(3) {
+    margin-right: 20px;
 }

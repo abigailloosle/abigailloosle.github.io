@@ -54,29 +54,20 @@
   animation: confetti-fast 1.25s linear 1 forwards;
 }
 
-h1 {
-  text-align: center;
-  color: #95CCE5;
-  font-size: 10em;
-  margin-bottom: 0;
-  z-index: 500;
-  font-family: 'Fredoka One', sans-serif;
-}
-
-h2 {
+.final h1 {
   text-align: center;
   color: #95CCE5;
   font-size: 5em;
-  margin-top: 0;
-  z-index: 500;
   font-family: 'Fredoka One', sans-serif;
+  z-index: 500;
 }
 
-@media (min-width: 800px) {
+@media (max-width: 800px) {
     .final h1 {
-      font-size: 7em;
+      font-size: 7em !important;
     }
     .final h2 {
-      font-size: 4em;
+      margin-top: 20px;
+      font-size: 4em !important;
     }
   }

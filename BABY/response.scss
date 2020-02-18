@@ -1,0 +1,50 @@
+@media only screen and (max-width: 600px) {
+
+    .landing h1 {
+        font-size: 70px;
+    }
+
+    .landing h2  {
+        font-size: 50px;
+        padding-top: 40px;
+    }
+
+    .landing #start {
+        margin: 20px 0;
+    }
+
+    .inner h2 {
+        font-size: 50px;
+    }
+
+    .inner .options {
+        flex-direction: column !important;
+        flex-wrap: nowrap !important;
+        width: 70% !important;
+        margin: 0 !important;
+        margin-left: 50px !important;
+    }
+
+    .inner .options span {
+        width: 100% !important;
+    }
+
+    .inner .options span:nth-of-type(1), 
+    .inner .options span:nth-of-type(3) {
+        margin-right: 0;
+    }
+
+    .inner .options span {
+        padding-top: 0 !important;
+        height: 40px !important;
+    }
+
+    .girl .inner .main-btn,
+    .boy .inner .main-btn {
+        margin: 30px 0 !important;
+    }
+    
+    span.wrong.main-btn.big-btn {
+        height: 90px !important;
+    }
+}

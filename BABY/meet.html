@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- stylesheet -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
+    <!-- gimme jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>Question 1</title>
+
+    <!-- favicon -->
+    <head profile="http://www.w3.org/2005/10/profile">
+        <link rel="icon" type="image/png" href="./favicon.ico">
+    </head>
+
+    <body class="boy">
+        <div class="wrapper">
+
+            <div class="q1 inner">
+                <h3>Question 1</h3>
+                <h2>Where did Nick and Abby first meet?</h2>
+
+                <div class="options">
+                    <span class="wrong main-btn big-btn">Mutual Activity</span>
+                    <span class="right main-btn">Spanish Class</span>
+                    <span class="wrong main-btn">English Class</span>
+                    <span class="wrong main-btn">Seminary</span>
+                </div>
+
+                <div class="explanation">
+                    <p>August 18, 2008 in Mrs. Leis’ infamous Spanish class. </p>
+                    <p>The first thing Abby ever said was, “So .. does anyone else speak Chinese or another language?”</p>
+
+                    <a class="main-btn" id="next1" href="./vroom.html">Next</a>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script>
+        $(document).ready(function () {
+            $("#right").click(function () {
+                $("body").css("background-color", "#FFE5EF");
+                $(".landing").css("display", "none");
+                $(".q1").css("display", "block");
+            });
+        });
+
+    </script>
+
+</html>
