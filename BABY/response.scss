@@ -13,6 +13,10 @@
         margin: 20px 0;
     }
 
+    .landing .main-btn {
+        margin: 40px 0;
+    }
+
     .inner h2 {
         font-size: 50px;
     }
@@ -41,10 +45,36 @@
 
     .girl .inner .main-btn,
     .boy .inner .main-btn {
-        margin: 30px 0 !important;
+        margin: 15px 0 !important;
     }
-    
+
+    span.right.main-btn,
+    span.wrong.main-btn {
+        height: 60px !important;
+    }
+
+    span.right.main-btn,
+    span.wrong.main-btn {
+        padding-top: 15px !important;
+    }
+
     span.wrong.main-btn.big-btn {
         height: 90px !important;
+        padding-top: 0 !important;
+    }
+
+    .next {
+        position: absolute;
+        top: 90vh;
+        right: 25px;
+    }
+
+    .explanation p:nth-of-type(1) {
+        padding-top: 30px;
+    }
+
+    .final img {
+        width: 350px !important;
+        margin-left: 15px !important;
     }
 }

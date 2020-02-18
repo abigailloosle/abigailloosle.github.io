@@ -20,7 +20,7 @@
         <link rel="icon" type="image/png" href="./favicon.ico">
     </head>
 
-    <body>
+    <body class="boy">
         <div class="wrapper">
 
             <div class="q3 inner">
@@ -28,10 +28,10 @@
                 <h2>Who said I love you first?</h2>
 
                 <div class="options">
-                    <span class="right">Nick</span>
-                    <span class="wrong">Abby</span>
-                    <span class="wrong">Said it at the same time</span>
-                    <span class="wrong">Happened over text</span>
+                    <span class="right main-btn">Nick</span>
+                    <span class="wrong main-btn">Abby</span>
+                    <span class="wrong main-btn">Said it at the same time</span>
+                    <span class="wrong main-btn">Happened over text</span>
                 </div>
 
                 <div class="explanation">
@@ -44,13 +44,20 @@
         </div>
     </body>
     <script>
-        // $(document).ready(function () {
-        //     $("#start").click(function () {
-        //         $("body").css("background-color", "#FFE5EF");
-        //         $(".landing").css("display", "none");
-        //         $(".q1").css("display", "block");
-        //     });
-        // });
+        $(document).ready(function () {
+                $(".right").click(function () {
+                    $(".right").css("background-color", "#BAD9B5");
+                    $(".right").css("border", "5px solid #7FD1C7");
+                    $(".explanation").css("display", "block");
+                });
+                $(".wrong").click(function () {
+                    $(".right").css("background-color", "#BAD9B5");
+                    $(".right").css("border", "5px solid #7FD1C7");
+                    $(".wrong").css("background-color", "#D8B3C2");
+                    $(".wrong").css("border", "5px solid #D8799F");
+                    $(".explanation").css("display", "block");
+                });
+            });
 
     </script>
 

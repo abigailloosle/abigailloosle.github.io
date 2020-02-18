@@ -71,7 +71,7 @@ span, p, a {
 
 .landing .main-btn {
     background-color: $bgirl;
-    margin: 40px 0;
+    margin: 0;
 }
 
 .landing a {
@@ -126,7 +126,7 @@ body.girl {
 
 .girl .inner .main-btn {
     background-color: $bgirl;
-    margin: 40px 0;
+    margin: 20px 0;
 }
 
 body.boy {
@@ -139,7 +139,23 @@ body.boy {
 
 .boy .inner .main-btn {
     background-color: $bboy;
-    margin: 40px 0;
+    margin: 20px 0;
+}
+
+.q5 h3 {
+    color: #fff;
+}
+
+.q5 a.options {
+    text-decoration: none;
+}
+
+span.boy.main-btn {
+    background-color: $bboy;
+}
+
+span.girl.main-btn {
+    background-color: $bgirl;
 }
 
 .inner .options {
@@ -170,4 +186,19 @@ body.boy {
 .inner .options span:nth-of-type(1), 
 .inner .options span:nth-of-type(3) {
     margin-right: 20px;
+}
+
+.explanation {
+    display: none;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a#next1 {
+    margin-top: 0;
+}
+
+.final img {
+    border: 15px solid #fff;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.19),0 6px 20px 0 rgba(0,0,0,0.19) !important;
 }
