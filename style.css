@@ -1,23 +1,592 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - rut-style.scss
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,900");
+nav {
+  display: flex;
+  justify-content: center;
+  width: 100%; }
+  nav img {
+    width: 80px;
+    height: 70px;
+    margin-top: 5px;
+    margin-left: 10px; }
+  nav .upnav {
+    padding-top: 15px; }
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    padding: none;
+    margin-right: 10px; }
+    nav ul li {
+      cursor: pointer;
+      display: inline-block;
+      position: relative; }
+      nav ul li a {
+        text-decoration: none;
+        padding: 15px;
+        color: black; }
+      nav ul li .nav-hover {
+        transition: width 5s;
+        -webkit-transition: width 5s; }
+      nav ul li .nav-hover:after {
+        content: '';
+        position: absolute;
+        height: 2px;
+        display: block;
+        margin-top: 5px;
+        background: #000000; }
+      nav ul li .nav-hover:hover:after {
+        width: 100%;
+        background: #000000; }
+  nav .upbutton {
+    margin-top: 10px; }
+  nav .pulse:hover {
+    animation: pulse 1s; }
+@keyframes pulse {
+  from {
+    transform: scale3d(1, 1, 1); }
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05); }
+  to {
+    transform: scale3d(1, 1, 1); } }
+  nav .hide {
+    display: none; }
 
-Backtrace:
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `read'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin/compiler.rb:294:in `watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/plugin.rb:109:in `method_missing'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:360:in `watch_or_update'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/base.rb:52:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/lib/sass/exec/base.rb:19:in `parse!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.5.6/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:22:in `load'
-/usr/local/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - rut-style.scss"; }
+header {
+  padding: 5%;
+  height: 590px;
+  background-image: url("img/me.png");
+  background-size: 750px;
+  background-repeat: no-repeat;
+  background-position: right -300px bottom -10px;
+  overflow: hidden; }
+  header h1 {
+    color: #46b2af;
+    font-size: 65px;
+    margin-top: 0.7em; }
+  header p {
+    color: black; }
+  header .hide-pic {
+    overflow: hidden;
+    margin: auto 10% 0 auto; }
+  header .links {
+    margin-top: 20px; }
+
+.links a {
+  padding-right: 10px; }
+
+.links .fab {
+  font-size: 1.5em; }
+
+.links a:link {
+  color: #3a8ca3; }
+
+.links a:visited {
+  color: #274361; }
+
+.links a:hover {
+  color: #fe9000; }
+
+.links a:active {
+  color: white; }
+
+#repo {
+  background-color: #f0bd2682; }
+
+.passions {
+  height: 70vh;
+  background-color: #131c33;
+  color: white;
+  padding: 25% 5% 5% 10%;
+  justify-content: center; }
+  .passions h2 {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    margin-bottom: 20%; }
+  .passions .passion_title {
+    font-weight: 900;
+    letter-spacing: 0.1em; }
+    .passions .passion_title + p {
+      margin-bottom: 15%; }
+  .passions #oj {
+    color: #fe9000; }
+  .passions #pa {
+    color: #229edb; }
+  .passions #gs {
+    color: #92278f; }
+
+.projects {
+  height: 100vh;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  /* unvisited link */
+  /* visited link */
+  /* mouse over link */
+  /* selected link */ }
+  .projects .info {
+    display: none; }
+  .projects a:link {
+    color: white; }
+  .projects a:visited {
+    color: black; }
+  .projects a:hover {
+    color: white;
+    text-decoration: underline; }
+  .projects a:active {
+    color: white;
+    text-decoration: none; }
+
+.proj {
+  color: #131c33; }
+  .proj .head {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    margin-left: 30px;
+    margin-top: 10%;
+    margin-bottom: 10%; }
+
+.explain {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 10%; }
+
+.panel {
+  width: 250px;
+  height: 200px;
+  border-radius: 20px;
+  padding-left: 4%;
+  padding-right: 4%; }
+
+.box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto; }
+  .box a {
+    width: 70%;
+    text-align: left; }
+  .box:hover .info {
+    display: block; }
+  .box:hover p {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+    text-align: center; }
+
+.center {
+  display: flex;
+  flex-flow: row;
+  width: 150px; }
+  .center h2 {
+    width: 10px; }
+  .center img {
+    padding-right: 10px;
+    width: 50px;
+    height: 50px; }
+
+.backwards .prog-about {
+  padding-top: 20px;
+  padding-right: 5%; }
+
+.forward .prog-about {
+  padding-top: 20px;
+  padding-left: 5%; }
+
+.lang {
+  display: flex;
+  flex-direction: row wrap; }
+
+.pill {
+  background: #bbbbbb;
+  white-space: nowrap;
+  border-radius: 15px;
+  font-size: 1em;
+  padding: 5px 8px;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+
+.side {
+  margin-right: 10px; }
+
+.box1 {
+  background-color: #fe9000;
+  background-image: url(img/angular-grab.png);
+  background-position: center; }
+
+.box2 {
+  background-color: #3a8ca3;
+  background-image: url(img/js-grab.png);
+  background-position: center; }
+
+.box3 {
+  background-color: #97cc04;
+  background-image: url(img/shop-grab.png);
+  background-position: center; }
+
+.box4 {
+  background-color: #229edb;
+  background-image: url(img/movie-grab.png);
+  background-position: center; }
+
+.box5 {
+  background-color: #92278f;
+  background-image: url(img/ani-grab.png);
+  background-position: center; }
+
+a {
+  text-decoration: none; }
+
+.see {
+  float: right; }
+
+.explain:nth-of-type(1) .pill {
+  background: #e8c547; }
+.explain:nth-of-type(1) .button {
+  border-color: #e8c547; }
+
+.explain:nth-of-type(2) .pill {
+  background: #fe9000; }
+.explain:nth-of-type(2) .button {
+  border-color: #fe9000; }
+
+.explain:nth-of-type(3) .pill {
+  background: #97cc04; }
+.explain:nth-of-type(3) .button {
+  border-color: #97cc04; }
+
+.explain:nth-of-type(5) .pill {
+  background: #229edb; }
+.explain:nth-of-type(5) .button {
+  border-color: #229edb; }
+
+.explain:nth-of-type(4) .pill {
+  background: #92278f; }
+.explain:nth-of-type(4) .button {
+  border-color: #92278f; }
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  text-align: center;
+  align-items: center;
+  justify-content: center; }
+  .skills p {
+    margin: auto;
+    width: 230px;
+    font-weight: bold;
+    font-size: 28px; }
+  .skills span {
+    font-weight: bold;
+    font-size: 2em; }
+
+.dev,
+.design {
+  width: 80%;
+  margin: auto;
+  border: 3px solid black;
+  border-radius: 10px;
+  text-align: center; }
+  .dev h2,
+  .design h2 {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    padding: 5px;
+    border-radius: 7px 7px 0 0;
+    color: white; }
+  .dev ul,
+  .design ul {
+    list-style-type: none;
+    padding-top: 2%;
+    padding-bottom: 2%; }
+
+.dev h2 {
+  background-color: #92278f; }
+
+.design h2 {
+  background-color: #229edb; }
+
+.projgrid {
+  display: flex;
+  max-width: 450px;
+  margin: 0 auto;
+  flex-direction: column; }
+  .projgrid .projcard {
+    margin-bottom: 20px;
+    height: 430px;
+    border: 1px solid #efefef;
+    border-radius: 5px;
+    overflow: hidden; }
+    .projgrid .projcard .stand-card, .projgrid .projcard .horizon-card {
+      padding: 10px 20px; }
+    .projgrid .projcard img {
+      width: 100%; }
+
+.projcard {
+  box-shadow: 2px 6px 28px -5px rgba(0, 0, 0, 0.08);
+  transition: color 100ms ease, background-color 100ms ease, box-shadow 200ms ease; }
+
+.projcard:hover {
+  box-shadow: 4px 9px 28px 1px rgba(0, 0, 0, 0.2); }
+
+@media (min-width: 768px) {
+  .projgrid {
+    max-width: 1100px;
+    display: grid;
+    grid-template-areas: " card1 card2 card2 " " card3 card4 card5 " " card6 card6 card7 " " card8 card9 card9 " " card10 card11 card12 ";
+    grid-gap: 25px;
+    margin-top: 50px;
+    width: auto !important; }
+    .projgrid #c1 {
+      grid-area: card1; }
+    .projgrid #c2 {
+      grid-area: card2;
+      display: flex;
+      flex-direction: row; }
+    .projgrid #c3 {
+      grid-area: card3; }
+    .projgrid #c4 {
+      grid-area: card4; }
+    .projgrid #c5 {
+      grid-area: card5; }
+    .projgrid #c6 {
+      grid-area: card6;
+      display: flex;
+      flex-direction: row; }
+    .projgrid #c7 {
+      grid-area: card7; }
+    .projgrid #c8 {
+      grid-area: card8; }
+    .projgrid #c9 {
+      grid-area: card9;
+      display: flex;
+      flex-direction: row; }
+    .projgrid #c10 {
+      grid-area: card10; }
+    .projgrid #c11 {
+      grid-area: card11; }
+    .projgrid #c12 {
+      grid-area: card12; } }
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  font-size: 20px;
+  line-height: 1.25em; }
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #efefef;
+  color: white; }
+
+.button {
+  background-color: #e8c547;
+  border: none;
+  color: black;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px; }
+
+.about {
+  background-color: #3a8ca3;
+  padding: 10% 5% 5% 10%; }
+  .about h2 {
+    font-size: 28px;
+    letter-spacing: 0.05em;
+    margin-bottom: 15%; }
+  .about p {
+    padding-bottom: 10%; }
+
+footer {
+  background-color: #229edb;
+  padding: 3%;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-content: center;
+  align-items: center; }
+  footer button {
+    padding: 8px; }
+  footer .links {
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    padding-top: 10px; }
+    footer .links .fab {
+      font-size: 1.5em;
+      padding-left: 10px; }
+  footer img {
+    width: 40px;
+    padding: 0 10px 0 0; }
+
+.hero .button, footer .button, .proj .button {
+  margin-top: 20px;
+  margin-left: 0;
+  background-color: transparent;
+  border: 4px #e8c547 solid;
+  color: black; }
+
+.hero .button {
+  margin-top: 250px; }
+
+.hobbies {
+  margin: 30px 20px;
+  padding: 30px;
+  background-color: white;
+  color: #131c33; }
+  .hobbies .center-block {
+    text-align: center; }
+
+@media (min-width: 768px) {
+  nav {
+    justify-content: space-between; }
+    nav .hide {
+      display: inline; }
+
+  header {
+    height: 530px;
+    background-size: 850px;
+    background-position: right -200px bottom -12px; }
+    header .hero {
+      margin-left: 5%; }
+    header p {
+      width: 400px; }
+    header #repo {
+      background-color: transparent; }
+
+  .passions {
+    height: 35%;
+    padding: 5% 5% 5% 10%; }
+    .passions h2 {
+      margin-bottom: 5%; }
+    .passions .passion_title {
+      letter-spacing: 0.1em; }
+      .passions .passion_title + p {
+        margin-bottom: 5%;
+        width: 600px; }
+
+  .hobbies {
+    padding: 7%; }
+    .hobbies p {
+      padding-top: 2%; }
+    .hobbies .hobby-intro {
+      display: flex;
+      flex-direction: row; }
+      .hobbies .hobby-intro .about-info {
+        padding-right: 5%; }
+      .hobbies .hobby-intro .my-code {
+        width: 100%;
+        padding-bottom: 30px; }
+    .hobbies .hobby-icons {
+      display: flex;
+      flex-flow: row wrap;
+      width: 70%;
+      margin-top: -15%; }
+      .hobbies .hobby-icons .center-block {
+        width: 30%;
+        margin-top: 5%; }
+      .hobbies .hobby-icons .left {
+        margin-right: 10%; }
+
+  .dev,
+  .design {
+    width: 30%;
+    border-radius: 10px; }
+    .dev h2,
+    .design h2 {
+      padding: 5px; }
+    .dev svg,
+    .design svg {
+      width: 10%;
+      height: auto; }
+
+  .about {
+    padding: 5% 5% 5% 5%; }
+    .about h2 {
+      font-size: 28px;
+      letter-spacing: 0.05em;
+      margin-bottom: 5%; }
+    .about p {
+      padding-bottom: 5%;
+      width: 600px; }
+    .about .details {
+      margin-left: 39%; }
+
+  .projects {
+    height: 100%;
+    width: 90%;
+    margin: auto; }
+    .projects .panel {
+      width: 150px;
+      height: 200px; }
+    .projects h2 {
+      width: 60px;
+      font-size: 28px;
+      margin-left: -55px; }
+    .projects .box a {
+      width: 60%; }
+    .projects .box3 .special-svg {
+      padding-top: 10px; }
+
+  .skills {
+    flex-direction: row; }
+    .skills p {
+      font-weight: bold;
+      width: 200px;
+      text-align: center; }
+
+  .hero .button, footer .button, .proj .button {
+    margin-top: 22px;
+    margin-left: 2px;
+    background-color: transparent;
+    border: 2px #00000078 solid;
+    color: #00000078;
+    transition: .1s; }
+
+  .hero .button:hover, footer .button:hover, .proj .button:hover {
+    margin-top: 20px;
+    margin-left: 0;
+    background-color: transparent;
+    border: 4px #e8c547 solid;
+    color: black; }
+
+  .hero .button {
+    margin-top: 60px; }
+
+  .hero .button:hover {
+    margin-top: 58px; }
+
+  .proj .explain {
+    flex-direction: row; }
+  .proj .backwards {
+    flex-flow: row-reverse; } }
+@media (min-width: 1200px) {
+  header {
+    height: 500px;
+    background-size: 950px;
+    background-position: right -100px bottom -12px; }
+
+  .passions {
+    height: 55%;
+    background-color: #131c33;
+    justify-content: center; }
+    .passions .passion_title {
+      letter-spacing: 0.1em; }
+      .passions .passion_title + p {
+        width: 800px; }
+
+  .projects .panel {
+    width: 150px;
+    height: 250px; } }
+
+/*# sourceMappingURL=style.css.map */
