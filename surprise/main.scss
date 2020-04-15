@@ -13,10 +13,6 @@ body {
     // max-width: 1200px;
 }
 
-// .q1, .q2, .q3, .q4, .q5, .q6, .q7 {
-//     display: none;
-// }
-
 .landing {
     width: 100vw;
     height: 100vh;
@@ -95,7 +91,7 @@ a.key {
     position: absolute;
     right: 0;
     bottom: 0;
-    color: #F5F5F5 !important;
+    color: #fff !important;
 }
 
 a.key:hover {
@@ -192,6 +188,15 @@ span.girl.main-btn {
     display: none;
     max-width: 800px;
     margin: 0 auto;
+}
+
+.explanation h3 {
+    text-align: left;
+}
+
+.explanation h3 span {
+    display: inline-block;
+    transform: scale(1,-1);  
 }
 
 a#next1 {

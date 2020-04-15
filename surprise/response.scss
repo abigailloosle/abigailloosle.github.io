@@ -1,36 +1,57 @@
 @media only screen and (max-width: 600px) {
 
     .landing h1 {
-        font-size: 70px;
+        font-size: 50px;
     }
 
     .landing h2  {
-        font-size: 50px;
+        font-size: 30px;
         padding-top: 40px;
     }
 
     .landing #start {
-        margin: 20px 0;
+        margin: 15px 0;
     }
 
     .landing .main-btn {
         margin: 40px 0;
     }
 
-    .inner h2 {
-        font-size: 50px;
+    .landing p {
+        font-size: 22px;
     }
 
-    .inner .options {
+    .inner h2 {
+        font-size: 30px;
+        margin-bottom: 0;
+    }
+
+    .explanation .topper {
+        display: flex;
+        justify-content: space-between;
+        margin: 5px 25px;
+    }
+
+    .q1.inner .options,
+    .q2.inner .options,
+    .q3.inner .options,
+    .q4.inner .options,
+    .q5.inner .options {
         flex-direction: column !important;
         flex-wrap: nowrap !important;
         width: 70% !important;
-        margin: 0 !important;
-        margin-left: 50px !important;
+        // margin: 0 !important;
+        // margin-left: 50px !important;
+        margin-left: 10%;
     }
 
-    .inner .options span {
+    .q1.inner .options span,
+    .q2.inner .options span,
+    .q3.inner .options span,
+    .q4.inner .options span,
+    .q5.inner .options span {
         width: 100% !important;
+        font-size: 30px;
     }
 
     .inner .options span:nth-of-type(1), 
@@ -43,14 +64,10 @@
         height: 40px !important;
     }
 
-    .girl .inner .main-btn,
-    .boy .inner .main-btn {
-        margin: 15px 0 !important;
-    }
-
-    span.right.main-btn,
-    span.wrong.main-btn {
-        height: 60px !important;
+    .girl .inner .options .main-btn,
+    .boy .inner .options .main-btn {
+        margin-top: 15px 0 !important;
+        margin-bottom: 0;
     }
 
     span.right.main-btn,
@@ -58,20 +75,20 @@
         padding-top: 15px !important;
     }
 
-    span.wrong.main-btn.big-btn {
-        height: 90px !important;
+    span.main-btn.big-btn {
+        height: 70px !important;
         padding-top: 0 !important;
     }
 
-    .next {
-        position: absolute;
-        top: 90vh;
-        right: 25px;
-    }
+    // .next {
+    //     position: absolute;
+    //     bottom: 10px;
+    //     right: 25px;
+    // }
 
-    .explanation p:nth-of-type(1) {
-        padding-top: 30px;
-    }
+    // .explanation p:nth-of-type(1) {
+    //     padding-top: 30px;
+    // }
 
     .final img {
         width: 350px !important;
