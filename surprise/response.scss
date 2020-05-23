@@ -94,4 +94,13 @@
         width: 350px !important;
         margin-left: 15px !important;
     }
+    .final .announce,
+    .final .ways-to-celebrate {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
 }

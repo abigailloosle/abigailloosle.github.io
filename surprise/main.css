@@ -13,9 +13,9 @@
     transform: translate3d(0, 0, 0) rotateX(0) rotateY(0); }
   100% {
     transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg); } }
-.final.container {
+.container {
   width: 100vw;
-  height: 95vh;
+  height: 160vh;
   background: #FFE5EF; }
 
 .confetti-container {
@@ -49,21 +49,9 @@
   font-family: 'Fredoka One', sans-serif;
   z-index: 500; }
 
-.final .announce {
+.final .contain {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  justify-items: center; }
-
-.final .announce .headings,
-.final .announce img {
-  z-index: 5000; }
-
-.split {
-  z-index: 500;
-  height: 50px;
-  background: #F4BED6;
-  width: 100%; }
+  grid-template-columns: 1fr 1fr; }
 
 @media (max-width: 800px) {
   .final h1 {
@@ -72,20 +60,6 @@
   .final h2 {
     margin-top: 20px;
     font-size: 4em !important; } }
-.celebrate {
-  text-align: center;
-  background: #E5F0FF;
-  padding: 50px; }
-
-.celebrate h2 {
-  font-size: 60px; }
-
-.ways-to-celebrate {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 3px solid #95CCE5;
-  border-radius: 8px; }
-
 @media only screen and (max-width: 600px) {
   .landing h1 {
     font-size: 50px; }
@@ -153,15 +127,7 @@
 
   .final img {
     width: 350px !important;
-    margin-left: 15px !important; }
-
-  .final .announce,
-  .final .ways-to-celebrate {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr;
-    align-items: center;
-    justify-items: center; } }
+    margin-left: 15px !important; } }
 body {
   margin: 0;
   background: #F0F0F0;
@@ -328,4 +294,4 @@ a#next1 {
   border: 15px solid #fff;
   box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.19), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=main.css.map */
