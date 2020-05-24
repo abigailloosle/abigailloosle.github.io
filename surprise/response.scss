@@ -75,11 +75,6 @@
         padding-top: 15px !important;
     }
 
-    span.main-btn.big-btn {
-        height: 70px !important;
-        padding-top: 0 !important;
-    }
-
     // .next {
     //     position: absolute;
     //     bottom: 10px;
@@ -91,16 +86,77 @@
     // }
 
     .final img {
-        width: 350px !important;
+        width: 90%;
         margin-left: 15px !important;
     }
     .final .announce,
     .final .ways-to-celebrate {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: .9fr .9fr;
         align-items: center;
         justify-items: center;
     }
 
+}
+@media (max-width: 320px) {
+    span.main-btn.big-btn {
+        height: 70px !important;
+        padding-top: 0 !important;
+    }
+    .final img {
+        width: 250px !important;
+        margin-left: 15px !important;
+    }
+}
+
+@media (max-width: 800px) {
+    .final h1 {
+      font-size: 20vw !important;
+      line-height: inherit;
+    }
+    .final h2,
+    .celebrate h2 {
+      margin-top: 20px;
+      font-size: 10vw !important;
+    }
+
+    .celebrate {
+        padding: 20px;
+    }
+    
+    .liner {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        width: 200px;
+        margin: 0 auto;
+    }
+    .invite {
+        flex-direction: column;
+    }
+    .invite:nth-last-of-type(1) {
+        flex-direction: column-reverse;
+    }
+
+    .party .invite .cute-pic, 
+    .party .invite .details {
+        width: 100%;
+    }
+
+    .party .invite .cute-pic {
+        height: 200px;
+        width: auto;
+    }
+
+    .invite .cute-pic#nick,
+    .invite .cute-pic#abby {
+        border-top-right-radius: .5rem;
+        border-top-left-radius: .5rem;
+        border-bottom-right-radius: 0;
+        border-bottom-right-radius: 0;
+    }
+    .links img {
+        align-self: center;
+    }
 }
