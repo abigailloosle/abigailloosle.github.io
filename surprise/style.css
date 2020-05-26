@@ -121,6 +121,9 @@
   height: auto;
   background-size: cover; }
 
+#number {
+  text-align: left; }
+
 .invite .cute-pic#nick {
   background-image: url(./baby-girl/baby-nick.jpg);
   border-top-right-radius: .5rem;
