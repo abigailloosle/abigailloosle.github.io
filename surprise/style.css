@@ -15,7 +15,7 @@
     transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg); } }
 .final.container {
   width: 100vw;
-  height: 95vh;
+  height: 70vh;
   background: #FFE5EF; }
 
 .confetti-container {
@@ -279,7 +279,16 @@ body.can {
     border-bottom-right-radius: 0; }
 
   .links img {
-    align-self: center; } }
+    align-self: center; }
+
+  .final .announce .headings h2 {
+    line-height: 60px; }
+
+  .final .announce .headings h2 {
+    line-height: 30px; }
+
+  .party {
+    margin-top: 0; } }
 body {
   margin: 0;
   background: #F0F0F0;
