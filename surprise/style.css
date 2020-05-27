@@ -157,6 +157,22 @@ body.can {
   width: 340px;
   margin: 0 auto; }
 
+.slider-single {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.slider-single h3 {
+  text-align: center;
+  padding-top: 10px; }
+
+.slider-single img {
+  width: 285px;
+  height: 380px;
+  object-fit: cover; }
+
+.slick-slide {
+  margin-right: 15px; }
+
 @media only screen and (max-width: 600px) {
   .landing h1 {
     font-size: 50px; }
@@ -288,7 +304,10 @@ body.can {
     line-height: 30px; }
 
   .party {
-    margin-top: 0; } }
+    margin-top: 0; }
+
+  #number {
+    text-align: center; } }
 body {
   margin: 0;
   background: #F0F0F0;
