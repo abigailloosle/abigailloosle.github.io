@@ -174,8 +174,9 @@ body.can {
 .slick-slide {
   margin-right: 15px; }
 
-.special-linker {
-  color: #F4BED6; }
+.special-linker:link {
+  color: #F4BED6;
+  font-size: inherit; }
 
 @media only screen and (max-width: 600px) {
   .landing h1 {

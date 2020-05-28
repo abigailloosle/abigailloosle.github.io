@@ -212,6 +212,7 @@ body.can {
 
 .slick-slide {margin-right: 15px;}
 
-.special-linker {
-  color: $bgirl;
+.special-linker:link {
+    color: #F4BED6;
+    font-size: inherit;
 }
