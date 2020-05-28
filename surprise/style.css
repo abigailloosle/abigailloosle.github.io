@@ -307,7 +307,14 @@ body.can {
     margin-top: 0; }
 
   #number {
-    text-align: center; } }
+    text-align: center; }
+
+  .q5 span.boy.main-btn, .q5 span.girl.main-btn {
+    margin-top: 15px; }
+
+  .q5 span.main-btn {
+    height: 50px !important;
+    padding-top: 20px !important; } }
 body {
   margin: 0;
   background: #F0F0F0;
