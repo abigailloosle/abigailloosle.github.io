@@ -45,7 +45,7 @@
 .final h1 {
   text-align: center;
   color: #95CCE5;
-  font-size: 10em;
+  font-size: 10vw;
   font-family: 'Fredoka One', sans-serif;
   z-index: 500;
   line-height: 160px; }
@@ -89,7 +89,7 @@
 
 .final h2,
 .celebrate h2 {
-  font-size: 60px; }
+  font-size: 5vw; }
 
 .celebrate .links {
   display: inline-flex; }
